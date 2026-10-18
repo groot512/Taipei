@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 TAIPEI 2박 4일 투어 플래너 | OH INHEE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    body {
+      font-family: 'Pretendard', sans-serif;
+      background-color: #0b0f19;
+      color: #e2e8f0;
+    }
+    .glass-card {
+      background: rgba(30, 41, 59, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .tab-active {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      color: #ffffff;
+      border-color: transparent;
+      box-shadow: 0 8px 20px -4px rgba(249, 115, 22, 0.45);
+    }
+    .timeline-line::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 19px;
+      width: 2px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+    .img-zoom:hover img {
+      transform: scale(1.06);
+    }
+  </style>
+</head>
+<body class="min-h-screen pb-20 selection:bg-orange-500 selection:text-white">
+
+  <!-- Hero Section -->
+  <header class="relative h-80 md:h-96 flex items-center justify-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=1920&q=80" 
+         alt="Taipei Skyline" 
+         class="absolute inset-0 w-full h-full object-cover opacity-35 scale-105 filter brightness-75">
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0b0f19] via-[#0b0f19]/50 to-transparent"></div>
+    
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold tracking-wider mb-4">
+        <i class="fa-solid fa-plane-departure"></i> JEJU AIR · 예약번호 KBLI5M (OH/INHEE 외 1명)
+      </div>
+      <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
+        2026 타이베이 2박 4일 마스터 플랜
+      </h1>
+      <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto">
+        2026. 12. 07 (월) 09:35 출발 — 12. 10 (목) 02:50 귀국 · 꽉 찬 3일 집중 아키텍처
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 -mt-10 relative z-20">
+    
+    <!-- Flight Boarding Pass Style Dashboard -->
+    <section class="glass-card rounded-2xl p-6 mb-8 shadow-2xl">
+      <div class="grid grid-cols-1 lg:grid-cols-11 gap-6 items-center">
+        
+        <!-- Outbound -->
+        <div class="lg:col-span-5 flex items-center justify-between bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">가는편 · 7C6151</span>
+            <div class="text-2xl font-black text-white mt-1">PUS <span class="text-xs font-normal text-slate-400">부산</span></div>
+            <div class="text-xs text-slate-400 mt-0.5">12.07 (월) 09:35</div>
+          </div>
+          <div class="flex flex-col items-center px-3">
+            <span class="text-[11px] text-slate-400 mb-1">약 2시간 50분</span>
+            <div class="w-20 md:w-28 h-[1px] bg-slate-600 relative flex items-center justify-center">
+              <i class="fa-solid fa-plane text-orange-400 text-xs bg-slate-900 px-1.5"></i>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">수하물 15kg</span>
+          </div>
+          <div class="text-right">
+            <span class="text-[11px] font-bold text-slate-400">도착 (현지시각)</span>
+            <div class="text-2xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">타오위안</span> TPE</div>
+            <div class="text-xs text-orange-400 font-semibold mt-0.5">12.07 (월) 11:25</div>
+          </div>
+        </div>
+
+        <!-- Center Badge -->
+        <div class="lg:col-span-1 flex flex-col items-center justify-center text-center">
+          <div class="w-12 h-12 rounded-full bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-400 font-extrabold text-sm">
+            2박4일
+          </div>
+          <span class="text-[11px] text-slate-400 mt-1">실제 숙박 2박</span>
+        </div>
+
+        <!-- Inbound -->
+        <div class="lg:col-span-5 flex items-center justify-between bg-slate-900/70 p-4 rounded-xl border border-slate-800">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded">오는편 · 7C6164</span>
+            <div class="text-2xl font-black text-white mt-1">TPE <span class="text-xs font-normal text-slate-400">타오위안</span></div>
+            <div class="text-xs text-sky-400 font-semibold mt-0.5">12.10 (목) 02:50</div>
+          </div>
+          <div class="flex flex-col items-center px-3">
+            <span class="text-[11px] text-slate-400 mb-1">수요일 밤 공항행</span>
+            <div class="w-20 md:w-28 h-[1px] bg-slate-600 relative flex items-center justify-center">
+              <i class="fa-solid fa-plane text-sky-400 text-xs bg-slate-900 px-1.5"></i>
+            </div>
+            <span class="text-[10px] text-slate-500 mt-1">수하물 15kg</span>
+          </div>
+          <div class="text-right">
+            <span class="text-[11px] font-bold text-slate-400">도착 (한국시각)</span>
+            <div class="text-2xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">부산</span> PUS</div>
+            <div class="text-xs text-slate-400 mt-0.5">12.10 (목) 06:10</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alert Banner -->
+      <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-300">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-circle-Exclamation text-amber-400"></i>
+          <span><strong class="text-amber-400">숙소 예약 체크:</strong> 12/07(월) 체크인 ~ 12/09(수) 체크아웃 (총 2박). 수요일 아침 짐 보관 후 밤 11시경 공항으로 이동합니다.</span>
+        </div>
+        <span class="text-slate-400 shrink-0"><i class="fa-solid fa-temperature-half text-sky-400 mr-1"></i>12월 타이베이 평균 기온: 16°C ~ 21°C (가벼운 자켓/코트)</span>
+      </div>
+    </section>
+
+    <!-- Course Selector Tabs -->
+    <section class="mb-8">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <i class="fa-solid fa-layer-group text-orange-400"></i> 3가지 테마 코스 선택
+        </h2>
+        <span class="text-xs text-slate-400">탭을 클릭하면 상세 일정과 사진이 변경됩니다</span>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <button onclick="switchCourse(0)" id="tab-0" class="tab-btn tab-active text-left p-4 rounded-xl border border-slate-800 glass-card transition-all duration-200">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-bold uppercase tracking-wider opacity-85">Course 01 · 클래식 마스터</span>
+            <i class="fa-solid fa-crown text-sm"></i>
+          </div>
+          <div class="text-base font-extrabold">도심 랜드마크 + 예스진지</div>
+          <p class="text-xs opacity-80 mt-1">첫 방문 필수 코스와 핵심 야경을 빈틈없이 정복</p>
+        </button>
+
+        <button onclick="switchCourse(1)" id="tab-1" class="tab-btn text-left p-4 rounded-xl border border-slate-800 glass-card hover:border-slate-700 transition-all duration-200 text-slate-300">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Course 02 · 12월 온천 & 미식</span>
+            <i class="fa-solid fa-hot-tub-person text-sm text-orange-400"></i>
+          </div>
+          <div class="text-base font-extrabold text-white">베이터우 · 우라이 · 위스키</div>
+          <p class="text-xs text-slate-400 mt-1">겨울 날씨에 최적화된 프라이빗 온천과 증류소 힐링</p>
+        </button>
+
+        <button onclick="switchCourse(2)" id="tab-2" class="tab-btn text-left p-4 rounded-xl border border-slate-800 glass-card hover:border-slate-700 transition-all duration-200 text-slate-300">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Course 03 · 트렌디 & 로컬</span>
+            <i class="fa-solid fa-camera-retro text-sm text-sky-400"></i>
+          </div>
+          <div class="text-base font-extrabold text-white">힙스터 골목 + 해안 라이딩</div>
+          <p class="text-xs text-slate-400 mt-1">복잡한 패키지 동선 없이 여유롭게 즐기는 감성 산책</p>
+        </button>
+      </div>
+    </section>
+
+    <!-- Dynamic Course Overview & Visual Gallery -->
+    <section id="course-content" class="space-y-8"></section>
+
+    <!-- Comparison Matrix -->
+    <section class="mt-14 glass-card rounded-2xl p-6">
+      <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+        <i class="fa-solid fa-chart-simple text-orange-400"></i> 3가지 코스 한눈에 비교하기
+      </h3>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse text-sm">
+          <thead>
+            <tr class="border-b border-slate-800 text-slate-400 text-xs uppercase">
+              <th class="py-3 px-4">구분</th>
+              <th class="py-3 px-4 text-orange-400">코스 1. 정석 마스터</th>
+              <th class="py-3 px-4 text-emerald-400">코스 2. 온천 & 위스키</th>
+              <th class="py-3 px-4 text-sky-400">코스 3. 트렌디 & 로컬</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/60 text-slate-300">
+            <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">핵심 매력</td>
+              <td class="py-3.5 px-4">타이베이 대표 랜드마크 올클리어</td>
+              <td class="py-3.5 px-4">프라이빗 온천욕 + 카발란 증류소</td>
+              <td class="py-3.5 px-4">성수동 같은 골목 카페 + 자전거 라이딩</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">근교 이동</td>
+              <td class="py-3.5 px-4">예류·스펀·진과스·지우펀 일일투어</td>
+              <td class="py-3.5 px-4">베이터우 / 우라이 계곡 또는 이란</td>
+              <td class="py-3.5 px-4">단수이·발리 + 지우펀 야간 단독 방문</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">추천 숙소 위치</td>
+              <td class="py-3.5 px-4">타이베이 메인역 또는 시먼딩</td>
+              <td class="py-3.5 px-4">중산(Zhongshan)역 2박 (또는 온천 1박)</td>
+              <td class="py-3.5 px-4">중산역 또는 시먼딩 부티크 호텔</td>
+            </tr>
+            <tr>
+              <td class="py-3.5 px-4 font-semibold text-white">체력 소모도</td>
+              <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 text-xs">중상 (도보 많음)</span></td>
+              <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 text-xs">낮음 (힐링 위주)</span></td>
+              <td class="py-3.5 px-4"><span class="px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 text-xs">보통 (여유로운 템포)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const courses = [
+      {
+        id: 0,
+        badge: "COURSE 01 · CLASSIC MASTER",
+        title: "도심 랜드마크 + 예스진지 완전 정복",
+        desc: "타이베이 첫 방문이거나 대만의 가장 상징적인 풍경(지우펀 홍등, 스펀 천등, 타이베이 101, 단수이 일몰)을 한 번에 다 담고 싶을 때 가장 완벽한 정석 동선입니다.",
+        stayRecommend: "타이베이 메인역 (시내 및 공항철도·투어버스 집결지 최적) 또는 시먼딩",
+        foodRecommend: "딘타이펑(샤오롱바오), 진과스 광부도시락, 라오허제 화덕만두, 단수이 대왕카스테라",
+        spots: [
+          {
+            name: "지우펀 홍등 거리",
+            tag: "Day 2 야경 하이라이트",
+            img: "https://images.unsplash.com/photo-1552993873-0dd1110e025f?auto=format&fit=crop&w=800&q=80",
+            caption: "센과 치히로의 행방불명 모티브가 된 산비탈 찻집 골목"
+          },
+          {
+            name: "타이베이 101 & 도심 야경",
+            tag: "Day 3 시티뷰",
+            img: "https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=800&q=80",
+            caption: "대만의 상징적인 마천루와 신이구 쇼핑 특구"
+          },
+          {
+            name: "중정기념당 & 자유광장",
+            tag: "Day 1 랜드마크",
+            img: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80",
+            caption: "웅장한 대리석 건축물과 정각마다 열리는 근위병 교대식"
+          },
+          {
+            name: "스펀 철길 천등 날리기",
+            tag: "Day 2 근교 투어",
+            img: "https://images.unsplash.com/photo-1519181245277-cffeb31da2e3?auto=format&fit=crop&w=800&q=80",
+            caption: "기찻길 위에서 소원을 적어 하늘로 띄우는 색다른 경험"
+          }
+        ],
+        days: [
+          {
+            day: "Day 1",
+            date: "12/07 (월)",
+            theme: "타이베이 클래식 랜드마크 & 미식",
+            route: "타오위안 공항(11:25) ➔ 공항철도(35분) ➔ 타이베이역/시먼딩 숙소 ➔ 중정기념당 ➔ 융캉제 ➔ 용산사 & 시먼딩",
+            schedule: [
+              { time: "11:25", title: "타오위안 공항 도착 및 입국 수속", detail: "이지카드 구매 및 공항철도(보라색 급행) 탑승 후 타이베이 메인역 이동" },
+              { time: "13:30", title: "호텔 짐 보관 및 융캉제 점심 식사", detail: "딘타이펑 샤오롱바오 또는 융캉우육면 식사 후 스무시 망고빙수 디저트" },
+              { time: "16:00", title: "중정기념당 관람 (근위병 교대식)", detail: "매시 정각에 진행되는 교대식 관람 후 자유광장 인증샷 촬영" },
+              { time: "18:30", title: "용산사 야경 & 시먼딩 밤거리 탐방", detail: "화려하게 불이 켜진 용산사 관람 후 시먼딩에서 곱창국수·지파이·버블티 야식" }
+            ]
+          },
+          {
+            day: "Day 2",
+            date: "12/08 (화)",
+            theme: "북부 해안 핵심 투어 (예·스·진·지)",
+            route: "타이베이 메인역 ➔ 예류 지질공원 ➔ 스펀(천등) ➔ 진과스(광부도시락) ➔ 지우펀(야경) ➔ 라오허제 야시장",
+            schedule: [
+              { time: "10:00", title: "예스진지 일일 버스투어 또는 프라이빗 택시투어 출발", detail: "2인 기준 편안함을 원하면 택시투어, 가성비를 원하면 전용 투어버스 활용" },
+              { time: "11:10", title: "예류 지질공원 관람", detail: "여왕바위 등 파도와 바람이 빚어낸 기암괴석 해안 산책" },
+              { time: "13:30", title: "스펀 철길 마을 천등 날리기 & 닭날개볶음밥", detail: "4가지 색깔 천등에 소원 적고 기찻길 위에서 기념 촬영" },
+              { time: "15:30", title: "진과스 황금박물관 & 지우펀 홍등 야경", detail: "광부도시락 맛보고 해 질 녘 지우펀 수치루 계단에서 홍등 야경 감상" },
+              { time: "20:00", title: "라오허제 야시장 먹방", detail: "시내 복귀 후 미슐랭 빕구르망 화덕만두(후자오빙)와 야시장 길거리 음식 정복" }
+            ]
+          },
+          {
+            day: "Day 3",
+            date: "12/09 (수) ~ 12/10 (목) 새벽",
+            theme: "역사 박물관 · 단수이 일몰 · 심야 마사지 후 출국",
+            route: "호텔 체크아웃(짐 보관) ➔ 고궁박물관 ➔ 단수이(일몰) ➔ 타이베이 101 ➔ 전신 마사지 ➔ 타오위안 공항(23:50)",
+            schedule: [
+              { time: "10:00", title: "호텔 체크아웃 (프론트에 캐리어 보관) 후 고궁박물관", detail: "세계 4대 박물관 중 하나인 국립고궁박물관에서 취옥백채 등 핵심 유물 관람" },
+              { time: "14:30", title: "단수이 옛거리 & 홍마오청 · 워런마터우 일몰", detail: "말할 수 없는 비밀 촬영지(담강중/진리대) 산책 후 해안가에서 붉은 노을 감상" },
+              { time: "18:30", title: "타이베이 101 전망대 & 신이구 저녁 식사", detail: "키키레스토랑(사천요리) 또는 마라훠궈 만찬 후 89층 전망대 야경 감상" },
+              { time: "21:00", title: "전신 마사지(샤워 포함)로 피로 회복 후 짐 찾기", detail: "비행기 탑승 전 개운하게 90분 마사지를 받고 호텔에서 캐리어 수령" },
+              { time: "23:00", title: "타오위안 공항 이동 (공항철도 막차 또는 우버)", detail: "02:50 출발 제주항공(7C6164) 체크인 및 출국" }
+            ]
+          }
+        ]
+      },
+      {
+        id: 1,
+        badge: "COURSE 02 · WINTER SPA & WHISKY",
+        title: "12월 맞춤형 온천 힐링 & 카발란 위스키",
+        desc: "선선한 12월 대만 날씨는 온천욕을 즐기기에 가장 완벽한 시즌입니다. 북적이는 관광지 대신 프라이빗 온천탕, 고즈넉한 올드타운, 그리고 세계적인 카발란 위스키 증류소를 결합한 품격 있는 휴양 코스입니다.",
+        stayRecommend: "중산(Zhongshan)역 인근 호텔 2박 연박 (또는 1박은 베이터우/우라이 온천 호텔 숙박)",
+        foodRecommend: "우라이 원주민 죽통밥 & 산채요리, 닝샤 야시장 굴전, 프리미엄 마라훠궈, 카발란 싱글몰트 시음",
+        spots: [
+          {
+            name: "베이터우 지열곡 & 프라이빗 온천",
+            tag: "Day 1 도심 온천",
+            img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+            caption: "에메랄드빛 유황 온천수가 피어오르는 지열곡과 개인 온천탕 힐링"
+          },
+          {
+            name: "카발란 위스키 증류소 (또는 우라이 계곡)",
+            tag: "Day 2 취향 선택",
+            img: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=800&q=80",
+            caption: "오크통 숙성고 견학과 나만의 싱글몰트 위스키 블렌딩 체험"
+          },
+          {
+            name: "디화제(적화가) & 다다오청 부두",
+            tag: "Day 1 레트로 산책",
+            img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+            caption: "19세기 붉은 벽돌 건축물에 자리 잡은 감각적인 찻집과 강변 일몰"
+          },
+          {
+            name: "마오콩 곤돌라 & 산 중턱 다원",
+            tag: "Day 3 티타임",
+            img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+            caption: "크리스탈 캐빈 곤돌라를 타고 올라가 타이베이를 내려다보며 마시는 철관음차"
+          }
+        ],
+        days: [
+          {
+            day: "Day 1",
+            date: "12/07 (월)",
+            theme: "올드타운 레트로 산책 & 베이터우 유황온천",
+            route: "타오위안 공항 ➔ 중산역 숙소 체크인 ➔ 디화제 거리 ➔ 베이터우 온천마을 ➔ 닝샤 야시장",
+            schedule: [
+              { time: "13:00", title: "중산역 호텔 체크인 및 점심 식사", detail: "세련된 백화점과 카페가 모인 중산역 거점 확보 후 정통 우육면 식사" },
+              { time: "14:30", title: "디화제(적화가) 전통 약재·건어물 거리 산책", detail: "고풍스러운 바로크 양식 건물 사이에서 대만 전통 다기 및 디저트 카페 탐방" },
+              { time: "17:00", title: "베이터우 온천마을 이동 & 프라이빗 온천욕", detail: "MRT로 30분 이동 후 특급 온천호텔 개인탕(탕우)에서 90분간 여행 피로 사르르 녹이기" },
+              { time: "20:00", title: "닝샤 야시장 로컬 미식 투어", detail: "타이베이 현지인들이 가장 사랑하는 알짜배기 미식 야시장 방문" }
+            ]
+          },
+          {
+            day: "Day 2",
+            date: "12/08 (화)",
+            theme: "[택 1] 우라이 계곡 탄산온천 OR 이란 카발란 위스키 투어",
+            route: "옵션 A: 우라이 폭포 & 꼬마기차 & 계곡 온천 / 옵션 B: 이란 카발란 증류소 & 자오시 온천공원",
+            schedule: [
+              { time: "10:30", title: "[옵션 A - 온천파] 우라이 온천마을 당일치기", detail: "우라이 옛거리 산책 후 꼬마기차(태거차) 탑승, 폭포 뷰 감상 및 무색무취 미인탕(탄산온천) 입욕" },
+              { time: "10:30", title: "[옵션 B - 위스키파] 이란 카발란 위스키 증류소 & 자오시", detail: "시외버스로 1시간 이동, 카발란 증류소 투어·시음·면세 구매 후 자오시 온천마을 족욕" },
+              { time: "18:30", title: "타이베이 시내 복귀 후 마라훠궈 & 타이완 생맥주", detail: "따끈한 훠궈와 18일 생맥주(18天)로 완벽한 저녁 만찬" }
+            ]
+          },
+          {
+            day: "Day 3",
+            date: "12/09 (수) ~ 12/10 (목) 새벽",
+            theme: "문화창의원구 · 마오콩 다원 · 고급 스파 후 출국",
+            route: "체크아웃 ➔ 화산1914 ➔ 마오콩 곤돌라(찻집) ➔ 신이구 쇼핑 ➔ 아로마 스파 ➔ 공항(23:50)",
+            schedule: [
+              { time: "10:30", title: "화산1914 문화창의산업원구 산책", detail: "옛 양조장을 개조한 복합문화공간에서 오르골 샵(우더풀라이프)과 브런치 즐기기" },
+              { time: "14:30", title: "마오콩 곤돌라 탑승 & 산 정상 찻집 힐링", detail: "바닥이 투명한 크리스탈 캐빈을 타고 올라가 차밭 뷰 테라스에서 대만 우롱차 시음" },
+              { time: "18:00", title: "신이구 백화점 투어 & 딘타이펑 A4점 저녁", detail: "타이베이 101 인근 백화점 거리에서 기념품(펑리수, 누가크래커) 구매 및 식사" },
+              { time: "21:00", title: "프리미엄 아로마 스파(샤워 완비) 후 공항 이동", detail: "개운하게 샤워 및 마사지 마친 뒤 호텔에서 짐 찾아 공항으로 출발" }
+            ]
+          }
+        ]
+      },
+      {
+        id: 2,
+        badge: "COURSE 03 · TRENDY & LOCAL VIBES",
+        title: "힙스터 골목 산책 + 해안 라이딩 + 야간 지우펀",
+        desc: "깃발 따라다니는 패키지 투어나 붐비는 박물관은 과감히 생략했습니다. 타이베이의 성수동이라 불리는 츠펑제, 발리 해안 전동자전거 라이딩, 그리고 노을 질 무렵 지우펀만 단독으로 다녀오는 감각적인 로컬 코스입니다.",
+        stayRecommend: "중산(Zhongshan)역 또는 시먼딩 디자인 부티크 호텔",
+        foodRecommend: "푸항또우장(로컬 조식), 다다오청 강변 푸드트럭, 지우펀 아메이차주관, 까르푸 위스키·기념품 쇼핑",
+        spots: [
+          {
+            name: "샹산 전망대 노을 & 야경",
+            tag: "Day 1 인생샷 스팟",
+            img: "https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=800&q=80",
+            caption: "20분만 오르면 타이베이 101과 도심 파노라마가 한눈에 펼쳐지는 최고의 뷰포인트"
+          },
+          {
+            name: "단수이 & 발리 해안 라이딩",
+            tag: "Day 2 액티비티",
+            img: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80",
+            caption: "페리를 타고 강 건너 발리로 넘어가 야자수 해안도로를 달리는 전동자전거 투어"
+          },
+          {
+            name: "츠펑제(적봉가) & 화산1914",
+            tag: "Day 1 힙스터 성지",
+            img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+            caption: "오래된 자동차 부품 골목 사이로 들어선 감각적인 로스터리 카페와 편집샵"
+          },
+          {
+            name: "보피랴오 역사거리",
+            tag: "Day 3 로컬 감성",
+            img: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
+            caption: "청나라 시대부터 이어진 붉은 벽돌 아케이드 골목에서의 한적한 오전 산책"
+          }
+        ],
+        days: [
+          {
+            day: "Day 1",
+            date: "12/07 (월)",
+            theme: "타이베이의 성수동(츠펑제) & 샹산 스카이라인",
+            route: "타오위안 공항 ➔ 중산역 숙소 ➔ 츠펑제 카페투어 ➔ 화산1914 ➔ 샹산 전망대 ➔ 다다오청 부두 야시장",
+            schedule: [
+              { time: "13:30", title: "중산역 츠펑제(적봉가) 골목 & 카페 투어", detail: "대만 MZ세대가 모이는 빈티지 샵, 독립서점, 핸드드립 카페 산책" },
+              { time: "15:30", title: "화산1914 문화창의산업원구 전시 및 팝업스토어", detail: "담쟁이덩굴로 덮인 붉은 벽돌 창고 앞에서 인생샷 촬영" },
+              { time: "17:00", title: "샹산(코끼리산) 전망대 일몰 및 야경 감상", detail: "해 질 녘 20분 정도 계단을 올라 붉게 물드는 타이베이 101 야경 감상" },
+              { time: "19:30", title: "다다오청 부두 컨테이너 마켓 (PIER 5)", detail: "강변 야경을 바라보며 수제맥주와 푸드트럭 음식을 즐기는 낭만적인 밤" }
+            ]
+          },
+          {
+            day: "Day 2",
+            date: "12/08 (화)",
+            theme: "단수이·발리 전동자전거 라이딩 & 지우펀 감성 찻집",
+            route: "단수이역 ➔ 페리 탑승 ➔ 발리(전동자전거) ➔ 오후 지우펀 단독 이동(아메이차주관) ➔ 시먼딩 심야 이자카야",
+            schedule: [
+              { time: "10:30", title: "단수이 도착 후 페리 타고 '발리(Bali)' 이동", detail: "단수이 선착장에서 10분간 배를 타고 건너가 2인용 전동자전거 대여, 해안 산책로 라이딩" },
+              { time: "15:30", title: "시내 경유 후 965번 직행버스로 '지우펀' 단독 이동", detail: "예류·스펀을 과감히 생략하고 지우펀에만 집중! 전망 좋은 찻집에서 여유롭게 노을 감상" },
+              { time: "19:30", title: "시먼딩 복귀 및 대만식 심야 열차(러차오/이자카야)", detail: "대만 현지 바이브가 넘치는 러차오 식당에서 파인애플 새우튀김, 삼배계와 맥주 한잔" }
+            ]
+          },
+          {
+            day: "Day 3",
+            date: "12/09 (수) ~ 12/10 (목) 새벽",
+            theme: "미슐랭 로컬 조식 · 까르푸 털기 · 마사지 후 출국",
+            route: "푸항또우장(조식) ➔ 보피랴오 역사거리 ➔ 융캉제 소품샵 ➔ 까르푸 꾸이린점 ➔ 마사지 ➔ 공항(23:50)",
+            schedule: [
+              { time: "09:30", title: "대만 전통 로컬 조식 (푸항또우장 또는 세계두장대왕)", detail: "따뜻한 콩국(또우장)과 갓 구운 화덕빵(샤오빙), 꽈배기(요우티아오)로 아침 식사" },
+              { time: "11:30", title: "체크아웃 후 보피랴오 역사거리 & 용산사", detail: "레트로한 붉은 벽돌 골목에서 사진 찍고 용산사에서 점괘 뽑기 체험" },
+              { time: "14:30", title: "융캉제 미식 & 라이하오(소품샵) 구경", detail: "총좌빙(파전병), 우육면 맛보고 아기자기한 대만 기념품 쇼핑" },
+              { time: "17:30", title: "까르푸(꾸이린점) 위스키·누가크래커·흑진주팩 쇼핑", detail: "면세점보다 저렴한 대만 로컬 간식과 카발란/금문고량주 장보기" },
+              { time: "20:30", title: "프리미엄 우육면 만찬 후 마사지 & 공항 이동", detail: "샤워 가능한 마사지샵에서 피로 푼 뒤 호텔에서 짐 찾아 타오위안 공항으로 이동" }
+            ]
+          }
+        ]
+      }
+    ];
+
+    function switchCourse(index) {
+      // Update Tab UI
+      document.querySelectorAll('.tab-btn').forEach((btn, i) => {
+        if (i === index) {
+          btn.classList.add('tab-active');
+          btn.classList.remove('text-slate-300');
+        } else {
+          btn.classList.remove('tab-active');
+          btn.classList.add('text-slate-300');
+        }
+      });
+
+      const c = courses[index];
+      const container = document.getElementById('course-content');
+
+      container.innerHTML = `
+        <!-- Course Header & Summary -->
+        <div class="glass-card rounded-2xl p-6 border-l-4 border-l-orange-500">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-extrabold tracking-widest text-orange-400 uppercase">${c.badge}</span>
+              <h2 class="text-2xl md:text-3xl font-black text-white mt-1">${c.title}</h2>
+              <p class="text-slate-300 text-sm mt-2 leading-relaxed max-w-3xl">${c.desc}</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5 pt-5 border-t border-slate-800/80 text-xs">
+            <div class="flex items-start gap-2.5 bg-slate-900/50 p-3.5 rounded-xl">
+              <i class="fa-solid fa-hotel text-orange-400 text-base mt-0.5"></i>
+              <div>
+                <strong class="text-white block mb-0.5">추천 숙박 거점 (2박 연박)</strong>
+                <span class="text-slate-300">${c.stayRecommend}</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-2.5 bg-slate-900/50 p-3.5 rounded-xl">
+              <i class="fa-solid fa-utensils text-emerald-400 text-base mt-0.5"></i>
+              <div>
+                <strong class="text-white block mb-0.5">핵심 미식 리스트</strong>
+                <span class="text-slate-300">${c.foodRecommend}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Photo Gallery -->
+        <div>
+          <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-images text-orange-400"></i> 코스 핵심 스팟 미리보기
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            ${c.spots.map(spot => `
+              <div class="glass-card rounded-xl overflow-hidden group img-zoom flex flex-col">
+                <div class="relative h-44 overflow-hidden">
+                  <img src="${spot.img}" alt="${spot.name}" class="w-full h-full object-cover transition-transform duration-500">
+                  <span class="absolute top-2.5 left-2.5 bg-slate-950/80 backdrop-blur-md text-orange-400 text-[11px] font-bold px-2.5 py-1 rounded-md border border-white/10">
+                    ${spot.tag}
+                  </span>
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h4 class="font-bold text-white text-sm">${spot.name}</h4>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">${spot.caption}</p>
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Day-by-Day Timeline -->
+        <div class="space-y-6">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-route text-orange-400"></i> 일자별 상세 타임라인 & 동선
+          </h3>
+          ${c.days.map(d => `
+            <div class="glass-card rounded-2xl p-6">
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-4 mb-5 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                  <span class="px-3 py-1 rounded-lg bg-orange-500 text-white font-black text-sm">${d.day}</span>
+                  <div>
+                    <span class="text-xs text-slate-400 font-semibold">${d.date}</span>
+                    <h4 class="text-lg font-extrabold text-white">${d.theme}</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Visual Route Bar -->
+              <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3.5 mb-6 flex items-center gap-2.5 text-xs text-orange-300 overflow-x-auto whitespace-nowrap">
+                <i class="fa-solid fa-location-dot text-orange-500 shrink-0"></i>
+                <span class="font-semibold">${d.route}</span>
+              </div>
+
+              <!-- Step Items -->
+              <div class="relative timeline-line space-y-5 pl-2">
+                ${d.schedule.map(item => `
+                  <div class="relative pl-8">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-orange-500 ring-4 ring-slate-900"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+                      <span class="text-xs font-mono font-bold text-orange-400 shrink-0">${item.time}</span>
+                      <h5 class="text-sm font-bold text-white">${item.title}</h5>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">${item.detail}</p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Initialize with Course 0
+    switchCourse(0);
+  </script>
+</body>
+</html>
