@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026 TAIPEI 2박 4일 마스터 플랜 v2.0 | OH INHEE</title>
+  <title>2026 TAIPEI 마스터 플랜 v5.0 | 이스틴 타이베이 호텔 거점</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -14,7 +14,7 @@
       color: #e2e8f0;
     }
     .glass-card {
-      background: rgba(23, 32, 50, 0.7);
+      background: rgba(23, 32, 50, 0.75);
       backdrop-filter: blur(14px);
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
@@ -36,6 +36,12 @@
     .img-zoom:hover img {
       transform: scale(1.06);
     }
+    /* Taipei MRT Line Badges */
+    .mrt-blue { background-color: #0070bd; color: #fff; }
+    .mrt-brown { background-color: #c48c31; color: #fff; }
+    .mrt-red { background-color: #e3002c; color: #fff; }
+    .mrt-green { background-color: #008659; color: #fff; }
+    .mrt-purple { background-color: #8246af; color: #fff; }
   </style>
 </head>
 <body class="min-h-screen pb-24 selection:bg-orange-500 selection:text-white">
@@ -43,89 +49,173 @@
   <!-- Hero Section -->
   <header class="relative h-80 md:h-96 flex items-center justify-center overflow-hidden">
     <img src="https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=1920&q=80" 
-         alt="Taipei Night View" 
-         class="absolute inset-0 w-full h-full object-cover opacity-35 scale-105 filter brightness-75">
+         alt="Taipei 101 Skyline" 
+         class="absolute inset-0 w-full h-full object-cover opacity-40 scale-105 filter brightness-75">
     <div class="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/50 to-transparent"></div>
     
     <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-6">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/20 border border-orange-500/40 text-orange-400 text-xs font-bold tracking-wider mb-4">
-        <i class="fa-solid fa-plane-departure"></i> JEJU AIR · 예약번호 KBLI5M (OH/INHEE 외 1명) · 일정 업데이트 완료
+        <i class="fa-solid fa-hotel"></i> BASECAMP LOCKED · 이스틴 타이베이 호텔 (怡品商旅) 2박 4일
       </div>
       <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
         2026 타이베이 2박 4일 마스터 플랜
       </h1>
       <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto">
-        <strong class="text-orange-400">2026. 12. 01 (화) 09:35 출발 — 12. 04 (금) 02:50 귀국</strong><br>
-        주말 인파를 완벽히 피하는 화·수·목 평일 골든타임 3일 아키텍처
+        <strong class="text-orange-400">2026. 12. 01 (화) 09:35 출발 — 12. 04 (금) 02:50 귀국 (예약번호 KBLI5M)</strong><br>
+        타오위안 공항 착륙부터 호텔 14층 체크인 · 전 일정 MRT/버스 환승 가이드 완벽 탑재
       </p>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-4 -mt-10 relative z-20">
     
-    <!-- Flight Boarding Pass Style Dashboard -->
-    <section class="glass-card rounded-2xl p-6 mb-8 shadow-2xl">
-      <div class="grid grid-cols-1 lg:grid-cols-11 gap-6 items-center">
+    <!-- Flight & Hotel Master Dashboard -->
+    <section class="glass-card rounded-2xl p-6 mb-8 shadow-2xl border-t-2 border-t-orange-500">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
         
-        <!-- Outbound -->
-        <div class="lg:col-span-5 flex items-center justify-between bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+        <!-- Flight Outbound -->
+        <div class="lg:col-span-4 flex items-center justify-between bg-slate-900/80 p-4 rounded-xl border border-slate-800">
           <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">가는편 · 7C6151</span>
-            <div class="text-2xl font-black text-white mt-1">PUS <span class="text-xs font-normal text-slate-400">부산</span></div>
-            <div class="text-xs text-emerald-400 font-semibold mt-0.5">12.01 (화) 09:35</div>
+            <span class="text-[10px] font-bold uppercase text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">가는편 · 7C6151</span>
+            <div class="text-xl font-black text-white mt-1">PUS <span class="text-xs font-normal text-slate-400">부산</span></div>
+            <div class="text-xs text-emerald-400 font-semibold">12.01 (화) 09:35</div>
           </div>
-          <div class="flex flex-col items-center px-3">
-            <span class="text-[11px] text-slate-400 mb-1">약 2시간 50분</span>
-            <div class="w-20 md:w-28 h-[1px] bg-slate-600 relative flex items-center justify-center">
-              <i class="fa-solid fa-plane text-orange-400 text-xs bg-slate-900 px-1.5"></i>
-            </div>
-            <span class="text-[10px] text-slate-500 mt-1">수하물 15kg</span>
-          </div>
+          <i class="fa-solid fa-plane text-orange-400 text-sm"></i>
           <div class="text-right">
-            <span class="text-[11px] font-bold text-slate-400">도착 (현지시각)</span>
-            <div class="text-2xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">타오위안</span> TPE</div>
-            <div class="text-xs text-orange-400 font-semibold mt-0.5">12.01 (화) 11:25</div>
+            <span class="text-[10px] text-slate-400">현지 도착</span>
+            <div class="text-xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">타오위안</span> TPE</div>
+            <div class="text-xs text-orange-400 font-semibold">12.01 (화) 11:25</div>
           </div>
         </div>
 
-        <!-- Center Badge -->
-        <div class="lg:col-span-1 flex flex-col items-center justify-center text-center">
-          <div class="w-12 h-12 rounded-full bg-orange-500/15 border border-orange-500/30 flex items-center justify-center text-orange-400 font-extrabold text-sm">
-            2박4일
+        <!-- Confirmed Hotel Card -->
+        <div class="lg:col-span-4 bg-gradient-to-br from-orange-500/15 to-amber-500/5 p-4 rounded-xl border border-orange-500/40 flex items-center justify-between">
+          <div>
+            <span class="text-[10px] font-extrabold uppercase text-orange-400 bg-orange-500/20 px-2 py-0.5 rounded">확정 숙소 (12/01~12/03 · 2박)</span>
+            <h2 class="text-base font-black text-white mt-1">이스틴 타이베이 호텔 (14F 로비)</h2>
+            <p class="text-[11px] text-slate-300 mt-0.5">BL15 중샤오푸싱역 · 동취 지하상가 11/14번 출구 앞</p>
           </div>
-          <span class="text-[11px] text-slate-400 mt-1">화·수·목 평일</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=Eastin+Taipei+Hotel" target="_blank" class="shrink-0 w-10 h-10 rounded-lg bg-orange-500 hover:bg-orange-400 text-white flex items-center justify-center shadow-lg transition" title="구글맵 열기">
+            <i class="fa-solid fa-location-dot"></i>
+          </a>
         </div>
 
-        <!-- Inbound -->
-        <div class="lg:col-span-5 flex items-center justify-between bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+        <!-- Flight Inbound -->
+        <div class="lg:col-span-4 flex items-center justify-between bg-slate-900/80 p-4 rounded-xl border border-slate-800">
           <div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded">오는편 · 7C6164</span>
-            <div class="text-2xl font-black text-white mt-1">TPE <span class="text-xs font-normal text-slate-400">타오위안</span></div>
-            <div class="text-xs text-sky-400 font-semibold mt-0.5">12.04 (금) 02:50</div>
+            <span class="text-[10px] font-bold uppercase text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded">오는편 · 7C6164</span>
+            <div class="text-xl font-black text-white mt-1">TPE <span class="text-xs font-normal text-slate-400">타오위안</span></div>
+            <div class="text-xs text-sky-400 font-semibold">12.04 (금) 02:50</div>
           </div>
-          <div class="flex flex-col items-center px-3">
-            <span class="text-[11px] text-slate-400 mb-1">목요일 밤 공항행</span>
-            <div class="w-20 md:w-28 h-[1px] bg-slate-600 relative flex items-center justify-center">
-              <i class="fa-solid fa-plane text-sky-400 text-xs bg-slate-900 px-1.5"></i>
-            </div>
-            <span class="text-[10px] text-slate-500 mt-1">수하물 15kg</span>
-          </div>
+          <i class="fa-solid fa-plane text-sky-400 text-sm"></i>
           <div class="text-right">
-            <span class="text-[11px] font-bold text-slate-400">도착 (한국시각)</span>
-            <div class="text-2xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">부산</span> PUS</div>
-            <div class="text-xs text-slate-300 font-semibold mt-0.5">12.04 (금) 06:10</div>
+            <span class="text-[10px] text-slate-400">한국 도착</span>
+            <div class="text-xl font-black text-white mt-1"><span class="text-xs font-normal text-slate-400">부산</span> PUS</div>
+            <div class="text-xs text-slate-300 font-semibold">12.04 (금) 06:10</div>
           </div>
         </div>
 
       </div>
+    </section>
 
-      <!-- Alert Banner -->
-      <div class="mt-4 pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-300">
-        <div class="flex items-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-400"></i>
-          <span><strong class="text-emerald-400">숙박 예약 기준:</strong> <strong>12/01(화) 체크인 ~ 12/03(목) 체크아웃 (총 2박)</strong>. 12/03(목) 밤 11시경 공항으로 이동해 12/04(금) 02:50 비행기를 탑승합니다.</span>
+    <!-- STEP 0: Airport to Eastin Taipei Hotel Master Guide -->
+    <section class="glass-card rounded-2xl p-6 mb-10 border-l-4 border-l-emerald-500">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-5">
+        <div>
+          <span class="text-xs font-extrabold tracking-widest text-emerald-400 uppercase">STEP 0 · AIRPORT TO HOTEL TRANSFER</span>
+          <h3 class="text-xl md:text-2xl font-black text-white mt-0.5">
+            ✈️ 타오위안 공항 착륙(11:25) ➔ 🏨 이스틴 타이베이 호텔 체크인 & 심야 복귀법
+          </h3>
         </div>
-        <span class="text-slate-400 shrink-0"><i class="fa-solid fa-thumbs-up text-orange-400 mr-1"></i>평일 일정이라 지우펀·온천·맛집 대기시간 40% 단축!</span>
+        <span class="text-xs bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-700 text-slate-300">
+          📍 주소: 台北市大安區忠孝東路四段87號14樓 (Bistro 98 빌딩 옆 건물 14층)
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+        <!-- Way 1: MRT -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-1 rounded font-bold mrt-purple text-[11px]">방법 A · 공항철도 + MRT (가장 정확 · 추천)</span>
+              <span class="text-orange-400 font-bold">약 55분 / 175 TWD</span>
+            </div>
+            <ol class="space-y-2 text-slate-300 mt-3 list-decimal list-inside leading-relaxed">
+              <li>공항에서 <strong class="text-purple-400">공항철도 보라색 급행(Express)</strong> 탑승 ➔ 종점 <strong>타이베이 메인역(A1)</strong> 하차 (35분)</li>
+              <li>지하 연결통로를 따라 <strong class="text-sky-400">MRT 반난선(파란색 라인, BL)</strong> 환승 ➔ 3정거장 이동 후 <strong>중샤오푸싱역(BL15)</strong> 또는 <strong>중샤오둔화역(BL16)</strong> 하차 (7분)</li>
+              <li><strong>[캐리어 끌 때 꿀팁]</strong> 지하로 연결된 <strong>동취 지하상가(東區地下街) 14번 출구(엘리베이터 있음)</strong> 또는 <strong>11번 출구</strong>로 나오면 바로 앞 <strong>No.87 빌딩(1층 시노팩 은행/상점)</strong> ➔ 엘리베이터로 <strong>14층 프론트</strong> 직행!</li>
+            </ol>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-emerald-400">
+            💡 체크인은 15:00부터지만, 13:00경 도착해 14층 프론트에 무료로 짐을 맡기고 바로 점심 먹으러 나가면 됩니다!
+          </div>
+        </div>
+
+        <!-- Way 2: Bus 1960 -->
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-1 rounded font-bold bg-emerald-600 text-white text-[11px]">방법 B · 1960번 공항리무진 (환승 없음)</span>
+              <span class="text-emerald-400 font-bold">약 55분 / 160 TWD</span>
+            </div>
+            <ol class="space-y-2 text-slate-300 mt-3 list-decimal list-inside leading-relaxed">
+              <li>타오위안 공항 제1터미널 지하 1층 버스 승강장에서 <strong>씨티에어버스(大有巴士) 1960번</strong> 탑승</li>
+              <li>고속도로를 달려 시내 진입 후 <strong>중샤오푸싱역(MRT Zhongxiao Fuxing Station / SOGO 백화점 앞)</strong> 정류장 하차</li>
+              <li>내린 곳에서 중샤오동로 4단 방향으로 평지 도보 3~4분(약 280m) 걸으면 바로 호텔 건물 도착!</li>
+            </ol>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-slate-400">
+            💡 지하철 계단이나 환승 통로 걷는 게 싫을 때 캐리어 싣고 한 번에 오기 좋습니다.
+          </div>
+        </div>
+
+        <!-- Way 3: Late Night Return -->
+        <div class="bg-slate-900/90 border border-sky-500/30 rounded-xl p-4 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2.5 py-1 rounded font-bold bg-sky-600 text-white text-[11px]">귀국편 · 12/03(목) 밤 11시 공항 복귀</span>
+              <span class="text-sky-400 font-bold">02:50 비행기 탑승</span>
+            </div>
+            <ul class="space-y-2 text-slate-300 mt-3 leading-relaxed">
+              <li>✅ <strong>12/03(목) 오전 11:30 이전:</strong> 체크아웃 후 14층 로비에 캐리어 무료 보관 (24시간 프론트 운영)</li>
+              <li>✅ <strong>밤 22:30경 호텔 복귀:</strong> 14층 무료 라운지에서 커피/물 마시며 짐 재정비</li>
+              <li>🚆 <strong>[전철 복귀]</strong> 22:45 호텔 출발 ➔ 파란색 MRT로 타이베이역 이동 ➔ <strong>공항철도 막차(23:00 급행 / 23:35 일반)</strong> 탑승</li>
+              <li>🚕 <strong>[우버/택시 복귀]</strong> 호텔 1층 앞에서 우버 호출 시 공항까지 밤길 <strong>약 40분 소요 (요금 약 1,200~1,400 TWD)</strong></li>
+            </ul>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-slate-800 text-[11px] text-sky-400">
+            💡 마지막 날 밤엔 피로가 누적되니 마사지 받고 호텔에서 우버(Uber) 불러 바로 공항 가는 걸 가장 추천합니다!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Eastin Taipei is a Strategic Jackpot -->
+    <section class="glass-card rounded-2xl p-5 mb-8 bg-gradient-to-r from-slate-900 via-slate-900/90 to-orange-950/30">
+      <h3 class="text-sm font-bold text-orange-400 mb-3 flex items-center gap-2">
+        <i class="fa-solid fa-bullseye"></i> 기획자 관점에서 본 '이스틴 타이베이 호텔'의 4대 지리적 무기
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <span class="px-2 py-0.5 rounded mrt-blue text-[10px] font-bold">BL 반난선 (파란색)</span>
+          <strong class="block text-white mt-1.5">시먼딩·타이베이101·화산1914 직통</strong>
+          <p class="text-slate-400 mt-1">환승 없이 파란색 지하철 하나로 타이베이역(3정거장), 시먼딩(4정거장), 국부기념관/101(2~3정거장) 올클리어!</p>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <span class="px-2 py-0.5 rounded mrt-brown text-[10px] font-bold">BR 원후선 (갈색)</span>
+          <strong class="block text-white mt-1.5">마오콩 곤돌라(동물원역) 환승 0회</strong>
+          <p class="text-slate-400 mt-1">중샤오푸싱역에서 갈색 라인을 타면 마오콩 곤돌라가 있는 동물원역까지 환승 없이 22분 만에 직행합니다.</p>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <span class="px-2 py-0.5 rounded bg-amber-600 text-white text-[10px] font-bold">1062번 광역버스</span>
+          <strong class="block text-white mt-1.5">호텔 근처에서 지우펀·진과스 직행</strong>
+          <p class="text-slate-400 mt-1">지우펀 가는 1062번 버스 시발점이 바로 중샤오푸싱역(2번 출구 근처)이라 앉아서 편하게 갈 수 있습니다.</p>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-xl border border-slate-800">
+          <span class="px-2 py-0.5 rounded bg-rose-600 text-white text-[10px] font-bold">동취(東區) 심야 미식</span>
+          <strong class="block text-white mt-1.5">마라훠궈·24시 마사지·키키 도보권</strong>
+          <p class="text-slate-400 mt-1">호텔 반경 300m 안에 만당홍 마라훠궈, 키키레스토랑, 딘타이펑(SOGO점), 24시간 마사지샵이 밀집해 있습니다.</p>
+        </div>
       </div>
     </section>
 
@@ -133,9 +223,9 @@
     <section class="mb-8">
       <div class="flex items-center justify-between mb-3">
         <h2 class="text-lg font-bold text-white flex items-center gap-2">
-          <i class="fa-solid fa-compass text-orange-400"></i> 3가지 전략 코스 선택 (탭 클릭)
+          <i class="fa-solid fa-compass text-orange-400"></i> 이스틴 호텔 출발 기준 · 3가지 코스 선택 (탭 클릭)
         </h2>
-        <span class="text-xs text-slate-400">자비스의 선정 이유 · 실제 리뷰 · 구글맵 핀 포함</span>
+        <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-route mr-1"></i>구간별 지하철 노선·출구·버스 번호 완비</span>
       </div>
       
       <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -145,7 +235,7 @@
             <i class="fa-solid fa-crown text-sm"></i>
           </div>
           <div class="text-base font-extrabold">도심 랜드마크 + 예스진지</div>
-          <p class="text-xs opacity-80 mt-1">대만 시그니처 뷰와 핵심 스팟을 한 번에 끝내는 정석</p>
+          <p class="text-xs opacity-80 mt-1">파란색 MRT와 투어버스로 핵심 명소를 끝내는 정석</p>
         </button>
 
         <button onclick="switchCourse(1)" id="tab-1" class="tab-btn text-left p-4 rounded-xl border border-slate-800 glass-card hover:border-slate-700 transition-all duration-200 text-slate-300">
@@ -153,8 +243,8 @@
             <span class="text-xs font-bold uppercase tracking-wider text-orange-400">Course 02 · 12월 온천 & 미식</span>
             <i class="fa-solid fa-hot-tub-person text-sm text-orange-400"></i>
           </div>
-          <div class="text-base font-extrabold text-white">베이터우 · 우라이 · 위스키</div>
-          <p class="text-xs text-slate-400 mt-1">12월 날씨에 최적화된 프라이빗 온천과 증류소 힐링</p>
+          <div class="text-base font-extrabold text-white">베이터우 · 마오콩 직통 · 위스키</div>
+          <p class="text-xs text-slate-400 mt-1">중샤오푸싱 갈색 라인(마오콩) 입지를 200% 살린 힐링</p>
         </button>
 
         <button onclick="switchCourse(2)" id="tab-2" class="tab-btn text-left p-4 rounded-xl border border-slate-800 glass-card hover:border-slate-700 transition-all duration-200 text-slate-300">
@@ -162,8 +252,8 @@
             <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Course 03 · 트렌디 & 로컬</span>
             <i class="fa-solid fa-camera-retro text-sm text-sky-400"></i>
           </div>
-          <div class="text-base font-extrabold text-white">힙스터 골목 + 해안 라이딩</div>
-          <p class="text-xs text-slate-400 mt-1">여유로운 카페 산책, 발리 자전거, 야간 지우펀 직행</p>
+          <div class="text-base font-extrabold text-white">보피랴오 + 해안 라이딩 + 1062 지우펀</div>
+          <p class="text-xs text-slate-400 mt-1">호텔 앞 1062번 버스로 지우펀만 쏙 다녀오는 감성 코스</p>
         </button>
       </div>
     </section>
@@ -171,111 +261,52 @@
     <!-- Dynamic Course Content -->
     <section id="course-content" class="space-y-8"></section>
 
-    <!-- Top 3 Hotel Candidates Section -->
+    <!-- Hotel Neighborhood Food & Massage Guide -->
     <section class="mt-14 pt-8 border-t border-slate-800">
-      <div class="mb-6">
-        <span class="text-xs font-extrabold tracking-widest text-orange-400 uppercase">STRATEGIC BASECAMP</span>
-        <h3 class="text-2xl font-black text-white mt-1 flex items-center gap-2">
-          <i class="fa-solid fa-hotel text-orange-400"></i> 자비스 엄선! 코스별 찰떡 호텔 후보군 TOP 3
+      <div class="mb-5">
+        <span class="text-xs font-extrabold tracking-widest text-orange-400 uppercase">AROUND EASTIN TAIPEI HOTEL</span>
+        <h3 class="text-xl font-black text-white mt-1 flex items-center gap-2">
+          <i class="fa-solid fa-utensils text-orange-400"></i> 호텔 걸어서 5분 컷! 동취(東區) 검증 맛집 & 마사지 핀
         </h3>
-        <p class="text-xs text-slate-400 mt-1">
-          목요일(12/03) 밤늦게 캐리어를 찾아 타오위안 공항으로 넘어가야 하므로, <strong>공항철도(A1 타이베이역) 접근성</strong>과 <strong>짐 보관 편의성</strong>이 검증된 3곳입니다.
-        </p>
+        <p class="text-xs text-slate-400 mt-1">일정 끝나고 밤늦게 호텔 돌아와서 멀리 갈 필요 없이 걸어서 바로 갈 수 있는 핵심 스팟들입니다.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <!-- Hotel 1 -->
-        <div class="glass-card rounded-2xl overflow-hidden flex flex-col border border-slate-800 hover:border-orange-500/40 transition-all">
-          <div class="relative h-44">
-            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Caesar Metro Taipei" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-orange-500 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
-              코스 1 추천 · 가성비 & 뷰
-            </span>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        <a href="https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Sogo+Fuxing" target="_blank" class="glass-card p-4 rounded-xl hover:border-orange-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold bg-orange-500/20 text-orange-400 px-2 py-0.5 rounded">호텔 도보 5분 · SOGO B2층</span>
+            <h4 class="text-sm font-bold text-white mt-2">딘타이펑 푸싱점 (SOGO 백화점)</h4>
+            <p class="text-slate-400 mt-1 leading-relaxed">중샤오푸싱역 2번 출구 SOGO 백화점 지하 2층. 대기표 뽑아두고 백화점 구경하거나 호텔에 있다가 가기 최적!</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
-                <span>반차오/용산사 권역 (완화구)</span>
-                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star"></i> 4.3 (리뷰 8,900+)</span>
-              </div>
-              <h4 class="text-lg font-extrabold text-white">시저 메트로 타이베이 <span class="text-xs font-normal text-slate-400 block">Caesar Metro Taipei (台北凱達大飯店)</span></h4>
-              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
-                <strong>[자비스 선정 이유]</strong> 완화의 기차역과 바로 연결되고 용산사·보피랴오 거리까지 도보 5분 거리입니다. 고층 객실에서는 타이베이 시내 뷰가 시원하게 트여 있고, 1박 10만 원대 중반의 압도적 가성비를 자랑합니다.
-              </p>
-              <div class="mt-3 p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 text-[11px] text-slate-400">
-                💬 <strong>실제 투숙객 반응:</strong> "방이 대만 호텔답지 않게 넓고 쾌적해요. 체크아웃 후 짐 보관 시스템이 아주 체계적이라 새벽 비행기 타기 전 최고였습니다."
-              </div>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-xs text-slate-400">예상가: <strong class="text-white">약 14~18만 원/박</strong></span>
-              <a href="https://www.google.com/maps/search/?api=1&query=Caesar+Metro+Taipei" target="_blank" class="text-xs font-bold text-orange-400 hover:text-orange-300 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot"></i> 구글맵 보기
-              </a>
-            </div>
-          </div>
-        </div>
+          <span class="text-orange-400 font-semibold mt-3 inline-block"><i class="fa-solid fa-location-dot mr-1"></i>구글맵 열기</span>
+        </a>
 
-        <!-- Hotel 2 -->
-        <div class="glass-card rounded-2xl overflow-hidden flex flex-col border border-slate-800 hover:border-emerald-500/40 transition-all">
-          <div class="relative h-44">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Regent Taipei" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
-              코스 2 추천 · 럭셔리 & 미식
-            </span>
+        <a href="https://www.google.com/maps/search/?api=1&query=%E7%B4%AB%E7%90%B3%E8%92%B8%E9%A4%83%E9%A4%A8" target="_blank" class="glass-card p-4 rounded-xl hover:border-orange-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded">호텔 바로 옆 빌딩 지하 1층</span>
+            <h4 class="text-sm font-bold text-white mt-2">자림증교관 (紫琳蒸餃館)</h4>
+            <p class="text-slate-400 mt-1 leading-relaxed">호텔 바로 옆 동취 명물 로컬 만두집! 육즙 가득한 찐만두(증교)와 군만두(궈티에), 산라탕이 1만 원 이하 가성비 최고.</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
-                <span>중산(Zhongshan)역 도보 5분</span>
-                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star"></i> 4.6 (리뷰 11,000+)</span>
-              </div>
-              <h4 class="text-lg font-extrabold text-white">리젠트 타이베이 <span class="text-xs font-normal text-slate-400 block">Regent Taipei (台北晶華酒店)</span></h4>
-              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
-                <strong>[자비스 선정 이유]</strong> 가장 세련된 중산역 핵심에 위치하며, 베이터우 온천 라인(레드라인) 직결 역입니다. 온수 수영장, 최고급 스파, 대만 최고 수준의 조식 뷔페(브라세리)를 갖춰 휴양·미식 코스의 품격을 완성합니다.
-              </p>
-              <div class="mt-3 p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 text-[11px] text-slate-400">
-                💬 <strong>실제 투숙객 반응:</strong> "조식이 정말 인생 조식입니다. 바로 앞이 츠펑제 카페거리고, 타이베이 메인역까지 택시로 5분이라 공항 이동도 너무 편했어요."
-              </div>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-xs text-slate-400">예상가: <strong class="text-white">약 32~40만 원/박</strong></span>
-              <a href="https://www.google.com/maps/search/?api=1&query=Regent+Taipei" target="_blank" class="text-xs font-bold text-emerald-400 hover:text-emerald-300 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot"></i> 구글맵 보기
-              </a>
-            </div>
-          </div>
-        </div>
+          <span class="text-emerald-400 font-semibold mt-3 inline-block"><i class="fa-solid fa-location-dot mr-1"></i>구글맵 열기</span>
+        </a>
 
-        <!-- Hotel 3 -->
-        <div class="glass-card rounded-2xl overflow-hidden flex flex-col border border-slate-800 hover:border-sky-500/40 transition-all">
-          <div class="relative h-44">
-            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="citizenM Taipei North Gate" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-sky-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow">
-              코스 3 추천 · 공항철도 직결 & 감성
-            </span>
+        <a href="https://www.google.com/maps/search/?api=1&query=Kiki+Restaurant+Yanji" target="_blank" class="glass-card p-4 rounded-xl hover:border-orange-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold bg-sky-500/20 text-sky-400 px-2 py-0.5 rounded">호텔 도보 6분</span>
+            <h4 class="text-sm font-bold text-white mt-2">키키레스토랑 옌지점 (Kiki 延吉)</h4>
+            <p class="text-slate-400 mt-1 leading-relaxed">한국인 최애 대만 사천요리(연두부튀김·부추꽃볶음·파인애플마요새우) 본점격 매장이 호텔에서 걸어서 6분 거리!</p>
           </div>
-          <div class="p-5 flex-1 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 mb-1">
-                <span>북문(Beimen) · 공항철도 도보 4분</span>
-                <span class="text-amber-400 font-bold"><i class="fa-solid fa-star"></i> 4.5 (리뷰 5,400+)</span>
-              </div>
-              <h4 class="text-lg font-extrabold text-white">시티즌M 타이베이 노스게이트 <span class="text-xs font-normal text-slate-400 block">citizenM Taipei North Gate</span></h4>
-              <p class="text-xs text-slate-300 mt-2.5 leading-relaxed">
-                <strong>[자비스 선정 이유]</strong> 타오위안 공항철도 타이베이역(A1) 출구에서 도보 4분 거리라 목요일 밤 공항 갈 때 동선이 압도적 1위입니다. 아이패드로 조명·블라인드를 제어하는 트렌디한 부티크 호텔로 시먼딩과 다다오청 사이에 위치합니다.
-              </p>
-              <div class="mt-3 p-2.5 rounded-lg bg-slate-900/70 border border-slate-800 text-[11px] text-slate-400">
-                💬 <strong>실제 투숙객 반응:</strong> "통창 너머로 보이는 북문(Beimen) 야경이 예술이에요. 2층 라운지 바 분위기가 너무 힙하고 공항철도 타러 가기 최고입니다."
-              </div>
-            </div>
-            <div class="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between">
-              <span class="text-xs text-slate-400">예상가: <strong class="text-white">약 16~21만 원/박</strong></span>
-              <a href="https://www.google.com/maps/search/?api=1&query=citizenM+Taipei+North+Gate" target="_blank" class="text-xs font-bold text-sky-400 hover:text-sky-300 flex items-center gap-1">
-                <i class="fa-solid fa-location-dot"></i> 구글맵 보기
-              </a>
-            </div>
+          <span class="text-sky-400 font-semibold mt-3 inline-block"><i class="fa-solid fa-location-dot mr-1"></i>구글맵 열기</span>
+        </a>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=%E6%A3%AESPA%E8%B6%B3%E9%AB%94%E9%A4%8A%E7%94%9F%E6%9C%83%E9%A4%A8+%E5%BF%A0%E5%AD%9D%E9%A4%A8" target="_blank" class="glass-card p-4 rounded-xl hover:border-orange-500/50 transition flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-bold bg-purple-500/20 text-purple-400 px-2 py-0.5 rounded">호텔 도보 3분 · 24시간 운영</span>
+            <h4 class="text-sm font-bold text-white mt-2">삼(森) SPA 족체양생회관 중샤오관</h4>
+            <p class="text-slate-400 mt-1 leading-relaxed">깔끔하고 고급스러운 24시간 마사지샵. 마지막 날(12/03 목) 밤 9시에 여기서 전신 마사지 받고 호텔 짐 찾아 공항 가면 완벽!</p>
           </div>
-        </div>
+          <span class="text-purple-400 font-semibold mt-3 inline-block"><i class="fa-solid fa-location-dot mr-1"></i>구글맵 열기</span>
+        </a>
       </div>
     </section>
 
@@ -285,288 +316,344 @@
     const courses = [
       {
         id: 0,
-        badge: "COURSE 01 · CLASSIC MASTER",
+        badge: "COURSE 01 · CLASSIC MASTER (이스틴 호텔 거점)",
         title: "도심 랜드마크 + 예스진지 완전 정복",
-        desc: "타이베이의 상징적인 풍경(지우펀 홍등, 스펀 천등, 타이베이 101, 단수이 일몰)을 한 번에 다 담는 정석 아키텍처입니다. 특히 12월 2일(수) 평일에 예스진지를 방문하므로 주말 인파 없이 쾌적하게 인생샷을 건질 수 있습니다.",
-        jarvisWhy: "처음 대만을 찾는 동행자가 있거나 '대만 왔으면 지우펀 홍등과 천등은 꼭 봐야지!' 하는 니즈가 명확할 때 후회 없는 선택입니다. 수요일(Day 2)에 근교 투어를 배치해 체력을 안배하고, 목요일(Day 3)은 시내와 마사지로 마무리해 새벽 비행기 피로도를 최소화했습니다.",
+        desc: "이스틴 타이베이 호텔 앞 파란색 MRT(반난선)를 타고 도심 핵심 명소를 직통으로 이동하고, 2일차 수요일 평일엔 예스진지 투어로 북부 해안 4대 명소를 한 번에 정복하는 정석 아키텍처입니다.",
+        jarvisWhy: "이스틴 호텔은 파란색 라인(중샤오푸싱역)에 위치해 있어 타이베이 메인역(예스진지 투어 집결지)까지 지하철로 딱 6분, 타이베이 101(시청역)까지 5분밖에 안 걸립니다. 이동 시간 낭비가 제로에 가까운 황금 동선입니다.",
         peopleReaction: {
-          pros: "대만의 대표 이미지들을 3일 만에 압축해서 다 볼 수 있어 만족도가 매우 높음. 부모님·배우자·친구 누구와 가도 실패 확률 제로.",
-          cons: "2일차 예스진지 투어와 3일차 고궁박물관 코스에 계단 및 도보 이동이 꽤 있어 편한 운동화 필수.",
+          pros: "호텔 바로 앞 SOGO 백화점 딘타이펑에서 대기 없이 첫 끼를 해결하고, 파란색 지하철 하나로 시내 주요 코스가 다 해결됨.",
+          cons: "2일차 예스진지 투어와 3일차 고궁박물관 코스에 도보 이동이 있으니 편한 운동화 착용 권장.",
           quotes: [
-            "수요일 평일에 지우펀 갔더니 주말처럼 깔려 죽을 정도가 아니라 홍등 계단에서 사진 정말 예쁘게 찍었어요!",
-            "마지막 날 밤 공항 가기 전에 발마사지+전신마사지 90분 받고 출발한 게 신의 한 수였습니다. 비행기 기절 꿀잠 보장."
+            "이스틴 호텔 14층에 짐 맡기마자 바로 옆 SOGO 백화점 지하 딘타이펑 갔더니 동선이 진짜 예술이었어요!",
+            "마지막 날 밤 호텔 걸어서 3분 거리 마사지샵에서 90분 마사지 받고, 14층 라운지에서 짐 챙겨 우버 타고 공항 갔더니 세상 편했습니다."
           ]
         },
         spots: [
           {
-            name: "지우펀 홍등 거리 (수치루)",
+            name: "지우펀 홍등 거리 (아메이차주관)",
             tag: "Day 2 야경 하이라이트",
-            img: "https://images.unsplash.com/photo-1552993873-0dd1110e025f?auto=format&fit=crop&w=800&q=80",
-            caption: "붉은 홍등이 켜지는 해 질 녘 산비탈 찻집 골목",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Jiufen+Old+Street"
+            wikiTitle: "Jiufen",
+            wikiLang: "en",
+            fallbackImg: "https://commons.wikimedia.org/wiki/Special:FilePath/A-Mei_Tea_House_in_Jiufen.jpg?width=800",
+            caption: "붉은 홍등이 켜지는 해 질 녘 산비탈 실제 아메이차주관 풍경",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=A-Mei+Tea+House+Jiufen"
           },
           {
-            name: "타이베이 101 전망대",
-            tag: "Day 3 시티뷰",
-            img: "https://images.unsplash.com/photo-1470004914212-05527e49370b?auto=format&fit=crop&w=800&q=80",
-            caption: "89층 실내 전망대와 91층 야외 테라스에서 보는 마천루",
+            name: "타이베이 101 타워",
+            tag: "Day 3 시티뷰 (호텔서 10분)",
+            wikiTitle: "Taipei 101",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=800&q=80",
+            caption: "이스틴 호텔 객실에서도 보이고 MRT로 10분이면 도착하는 마천루",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Taipei+101+Observatory"
           },
           {
             name: "중정기념당 & 자유광장",
             tag: "Day 1 랜드마크",
-            img: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80",
-            caption: "압도적 스케일의 광장과 절도 있는 근위병 교대식",
+            wikiTitle: "Chiang Kai-shek Memorial Hall",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80",
+            caption: "압도적 스케일의 팔각 블루 루프 본당과 절도 있는 근위병 교대식",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Chiang+Kai-shek+Memorial+Hall"
           },
           {
             name: "스펀 철길 천등 날리기",
             tag: "Day 2 근교 투어",
-            img: "https://images.unsplash.com/photo-1519181245277-cffeb31da2e3?auto=format&fit=crop&w=800&q=80",
-            caption: "기찻길 위에서 4색 천등에 소원을 적어 띄우는 이색 체험",
+            wikiTitle: "Shifen Old Street",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1519181245277-cffeb31da2e3?auto=format&fit=crop&w=800&q=80",
+            caption: "실제 스펀 기찻길 위에서 4색 천등에 소원을 적어 띄우는 체험",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Shifen+Old+Street"
           }
         ],
         pins: [
+          { name: "이스틴 타이베이 호텔 (베이스캠프)", cat: "숙소", url: "https://www.google.com/maps/search/?api=1&query=Eastin+Taipei+Hotel" },
+          { name: "딘타이펑 푸싱점 (호텔 도보 5분)", cat: "맛집", url: "https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Sogo+Fuxing" },
           { name: "중정기념당", cat: "명소", url: "https://www.google.com/maps/search/?api=1&query=Chiang+Kai-shek+Memorial+Hall" },
-          { name: "딘타이펑 신이점(테이크아웃) / A4점", cat: "맛집", url: "https://www.google.com/maps/search/?api=1&query=Din+Tai+Fung+Xinyi" },
-          { name: "용산사 (야경)", cat: "명소", url: "https://www.google.com/maps/search/?api=1&query=Lungshan+Temple" },
+          { name: "용산사 & 시먼딩", cat: "야경", url: "https://www.google.com/maps/search/?api=1&query=Lungshan+Temple" },
           { name: "예류 지질공원", cat: "근교", url: "https://www.google.com/maps/search/?api=1&query=Yehliu+Geopark" },
-          { name: "스펀 옛거리 (천등/닭날개볶음밥)", cat: "근교", url: "https://www.google.com/maps/search/?api=1&query=Shifen+Old+Street" },
+          { name: "스펀 옛거리 (천등)", cat: "근교", url: "https://www.google.com/maps/search/?api=1&query=Shifen+Old+Street" },
           { name: "지우펀 아메이차주관", cat: "근교/뷰", url: "https://www.google.com/maps/search/?api=1&query=A-Mei+Tea+House+Jiufen" },
-          { name: "라오허제 야시장 (화덕만두)", cat: "야시장", url: "https://www.google.com/maps/search/?api=1&query=Raohe+Street+Night+Market" },
+          { name: "라오허제 야시장", cat: "야시장", url: "https://www.google.com/maps/search/?api=1&query=Raohe+Street+Night+Market" },
           { name: "국립고궁박물관", cat: "박물관", url: "https://www.google.com/maps/search/?api=1&query=National+Palace+Museum+Taipei" },
-          { name: "단수이 홍마오청 & 워런마터우", cat: "일몰", url: "https://www.google.com/maps/search/?api=1&query=Fort+San+Domingo+Tamsui" },
-          { name: "타이베이 101", cat: "야경", url: "https://www.google.com/maps/search/?api=1&query=Taipei+101" }
+          { name: "단수이 워런마터우", cat: "일몰", url: "https://www.google.com/maps/search/?api=1&query=Tamsui+Fisherman's+Wharf" }
         ],
         days: [
           {
             day: "Day 1",
             date: "12/01 (화)",
-            theme: "타이베이 클래식 랜드마크 & 미식 입문",
-            route: "타오위안 공항(11:25) ➔ 공항철도(35분) ➔ 숙소 짐보관 ➔ 융캉제 ➔ 중정기념당 ➔ 용산사 & 시먼딩",
+            theme: "공항 도착 ➔ 이스틴 호텔 짐 보관 ➔ 중정기념당 · 용산사 · 시먼딩",
+            route: "타오위안 공항(11:25) ➔ [공항철도+파란선] 중샤오푸싱역 ➔ 이스틴 호텔(14F) ➔ 중정기념당 ➔ 용산사 & 시먼딩",
             schedule: [
-              { time: "11:25", title: "타오위안 공항 도착 · 공항철도 급행 탑승", detail: "입국장 여행자 지원금 이벤트 확인 후 공항철도로 타이베이 메인역 이동 (35분 소요)" },
-              { time: "13:30", title: "호텔 짐 보관 및 융캉제 점심 식사", detail: "융캉우육면 또는 딘타이펑 샤오롱바오 식사 후 스무시 하우스 망고빙수 디저트" },
-              { time: "16:00", title: "중정기념당 관람 & 자유광장 산책", detail: "오후 4시 또는 5시 정각 진행되는 교대식 관람 후 웅장한 파란 지붕 배경으로 기념 촬영" },
-              { time: "18:30", title: "용산사 화려한 야경 & 시먼딩 밤거리", detail: "타이베이에서 가장 오래된 사원 용산사 야경 감상 후 시먼딩에서 아종면선·지파이·행복당 버블티" }
+              { time: "11:25", title: "타오위안 공항 도착 ➔ 이스틴 타이베이 호텔 이동", transit: "보라색 공항철도 급행(타이베이역 하차) ➔ 파란색 반난선 환승 ➔ 중샤오푸싱역(동취 지하상가 14번 출구 엘리베이터)", detail: "약 55분 소요. 건물 14층 프론트에 도착해 여권 제시 후 캐리어 무료 보관 (체크인은 15시부터)" },
+              { time: "13:15", title: "호텔 옆 '딘타이펑 푸싱점(SOGO B2)' 또는 '자림증교관' 점심", transit: "호텔에서 도보 2~5분", detail: "멀리 갈 필요 없이 호텔 바로 옆 SOGO 백화점 지하 2층 딘타이펑에서 샤오롱바오·우육면으로 첫 식사 후 15시 객실 키 수령" },
+              { time: "16:00", title: "중정기념당 교대식 관람 & 자유광장 산책", transit: "중샤오푸싱역(파란선) ➔ 중샤오신생역(노란선) ➔ 동먼역 ➔ 중정기념당역 5번 출구 (약 15분)", detail: "오후 4시 또는 5시 정각 근위병 교대식 관람 후 광장 정문 패루 앞에서 인증샷 촬영" },
+              { time: "18:30", title: "용산사 화려한 야경 & 시먼딩 밤거리 탐방", transit: "용산사 관람 후 파란색 반난선 1정거장 ➔ 시먼역 6번 출구 / 귀가 시 시먼역에서 파란색 라인 타고 중샤오푸싱역 직행 (9분!)", detail: "용산사 야경 감상 후 시먼딩에서 아종면선·지파이·행복당 버블티 맛보고, 파란색 지하철로 환승 없이 호텔 복귀" }
             ]
           },
           {
             day: "Day 2",
             date: "12/02 (수)",
-            theme: "북부 해안 핵심 투어 (예·스·진·지 평일 찬스)",
-            route: "타이베이 메인역 ➔ 예류 지질공원 ➔ 스펀(천등) ➔ 진과스(광부도시락) ➔ 지우펀(야경) ➔ 라오허제 야시장",
+            theme: "북부 해안 핵심 투어 (예·스·진·지) & 라오허제 야시장",
+            route: "이스틴 호텔 ➔ 타이베이 메인역(투어 탑승) ➔ 예류 ➔ 스펀 ➔ 진과스 ➔ 지우펀 ➔ 라오허제 야시장 ➔ 호텔",
             schedule: [
-              { time: "10:00", title: "예스진지 프라이빗 택시투어 또는 소규모 벤 투어 출발", detail: "2인 기준 우리끼리 편하게 다니려면 택시투어(약 15~18만 원), 가성비는 전용 투어버스 활용" },
-              { time: "11:10", title: "예류 지질공원 기암괴석 해안 산책", detail: "여왕바위, 촛대바위 등 바다와 바람이 깎아낸 비현실적인 해안 절경 감상" },
-              { time: "13:30", title: "스펀 철길 천등 날리기 & 땅콩아이스크림", detail: "기찻길 한가운데서 소원 적힌 천등 날리고 고수 뺀 대만식 땅콩아이스크림 맛보기" },
-              { time: "15:30", title: "진과스 광부도시락 & 지우펀 홍등 야경", detail: "진과스 산책 후 해 질 녘 지우펀으로 이동해 붉은 홍등이 켜진 수치루 골목과 찻집 감상" },
-              { time: "20:00", title: "라오허제 야시장 먹방", detail: "시내 복귀 시 라오허제 야시장에 하차해 후자오빙(화덕만두), 큐브스테이크, 오징어구이 정복" }
+              { time: "09:30", title: "이스틴 호텔 출발 ➔ 예스진지 투어 합류", transit: "[버스투어 시] 중샤오푸싱역에서 파란색 MRT 3정거장(6분) ➔ 타이베이 메인역 M3/시먼역 집결지 / [택시투어 시] 호텔 1층 앞 픽업", detail: "수요일 평일이라 도로 정체 없이 쾌적하게 북부 해안으로 출발" },
+              { time: "11:00", title: "예류 지질공원 & 스펀 철길 천등 날리기", transit: "전용 투어 차량 이동", detail: "예류 여왕바위 해안 산책 후 스펀으로 이동해 기찻길 위에서 4색 천등 날리기 & 닭날개볶음밥 간식" },
+              { time: "15:30", title: "진과스 광부도시락 & 지우펀 홍등 야경", transit: "전용 투어 차량 이동", detail: "진과스 황금박물관 산책 후 해 질 녘 지우펀 수치루 계단에서 붉은 홍등 야경과 땅콩아이스크림 즐기기" },
+              { time: "20:00", title: "라오허제 야시장 하차 먹방 ➔ 호텔 복귀", transit: "투어 복귀 시 '라오허제 야시장(송산역)' 하차 ➔ 호텔 복귀 시 우버(약 10분 / 180 TWD) 또는 시내버스 이용", detail: "미슐랭 화덕만두(후자오빙)와 야시장 먹거리 정복 후 택시/우버로 10분 만에 이스틴 호텔로 편안히 복귀" }
             ]
           },
           {
             day: "Day 3",
             date: "12/03 (목) ~ 12/04 (금) 새벽",
-            theme: "고궁박물관 · 단수이 일몰 · 심야 마사지 후 출국",
-            route: "호텔 체크아웃(짐 보관) ➔ 고궁박물관 ➔ 단수이(일몰) ➔ 타이베이 101 ➔ 전신 마사지 ➔ 공항(23:50)",
+            theme: "고궁박물관 · 단수이 일몰 · 타이베이 101 · 호텔 옆 마사지 후 출국",
+            route: "14F 체크아웃(짐보관) ➔ 고궁박물관 ➔ 단수이(일몰) ➔ 타이베이 101 ➔ 동취 마사지 ➔ 14F 짐 픽업 ➔ 공항",
             schedule: [
-              { time: "10:00", title: "호텔 체크아웃(캐리어 보관) 후 국립고궁박물관", detail: "70만 점의 황실 보물이 모인 박물관에서 취옥백채, 육형석 등 핵심 유물 관람" },
-              { time: "14:30", title: "단수이 홍마오청 & 워런마터우(연인의 다리) 일몰", detail: "붉은 벽돌의 홍마오청과 진리대학 산책 후 오후 5시경 바다로 떨어지는 황홀한 일몰 감상" },
-              { time: "18:30", title: "타이베이 101 전망대 & 신이구 만찬", detail: "키키레스토랑(연두부튀김/파볶음) 또는 마라훠궈 저녁 식사 후 타이베이 101 야경 감상" },
-              { time: "21:00", title: "전신 마사지(샤워 가능 샵) 후 호텔 짐 수령", detail: "90분 전신 마사지로 3일간의 도보 피로를 완전히 푼 뒤 호텔에서 캐리어 픽업" },
-              { time: "23:00", title: "타오위안 공항 이동 ➔ 12/04(금) 02:50 출발", detail: "공항철도(막차 약 23:30) 또는 우버로 이동, 02:50 출발(7C6164) ➔ 06:10 김해 도착" }
+              { time: "10:00", title: "호텔 14층 체크아웃(캐리어 보관) ➔ 국립고궁박물관", transit: "중샤오푸싱역(파란선) ➔ 타이베이역(빨간선 환승) ➔ 스린역 1번 출구 앞 버스(R30/815번) 탑승 ➔ 박물관 정문 하차 (약 40분)", detail: "세계 4대 박물관인 고궁박물관에서 취옥백채, 육형석 등 황실 보물 핵심 관람" },
+              { time: "14:30", title: "단수이 홍마오청 & 워런마터우(연인의 다리) 일몰", transit: "스린역에서 빨간색 단수이선 탑승 ➔ 종점 단수이역 하차 (약 30분)", detail: "붉은 벽돌의 홍마오청과 담강중/진리대 산책 후 오후 5시경 바다로 떨어지는 황홀한 일몰 감상" },
+              { time: "18:30", title: "타이베이 101 전망대 & 호텔 근처 '키키레스토랑 옌지점' 만찬", transit: "단수이역에서 빨간색 라인 1본으로 '타이베이101/세계무역센터역' 직행 (환승 없음, 50분) ➔ 식사는 호텔 근처로 이동", detail: "타이베이 101 전망대 야경 감상 후, 호텔 근처 키키레스토랑(도보 6분) 또는 만당홍 마라훠궈에서 저녁 만찬" },
+              { time: "21:00", title: "호텔 도보 3분 '삼(森) SPA' 90분 마사지 ➔ 14층 짐 픽업", transit: "식당 ➔ 마사지샵 ➔ 이스틴 호텔 모두 도보 3~5분 이내!", detail: "개운하게 마사지 받고 22:30경 호텔 14층 라운지에서 캐리어 찾아 옷 갈아입고 커피 한 잔" },
+              { time: "22:50", title: "타오위안 공항 이동 ➔ 12/04(금) 02:50 부산행 탑승", transit: "호텔 1층에서 우버 호출 (공항까지 40분 / 약 1,300 TWD) 또는 파란색 MRT로 타이베이역 이동 후 23:35 공항철도 막차 탑승", detail: "자정 전 공항 도착, 수하물(15kg) 위탁 후 02:50 제주항공(7C6164) 탑승 ➔ 06:10 김해 도착" }
             ]
           }
         ]
       },
       {
         id: 1,
-        badge: "COURSE 02 · WINTER SPA & WHISKY",
-        title: "12월 맞춤형 온천 힐링 & 카발란 위스키",
-        desc: "12월 초 타이베이의 선선한 날씨(16~20도)는 야외 온천과 위스키 투어를 즐기기에 1년 중 가장 완벽한 계절입니다. 북적이는 관광지 대신 프라이빗 온천탕, 레트로 올드타운, 세계적인 카발란 증류소를 결합한 고품격 휴양 코스입니다.",
-        jarvisWhy: "기획자 업무로 쌓인 피로를 풀고 동행자와 깊은 대화를 나누며 쉬어가고 싶을 때 강력 추천합니다. 특히 화·수·목 평일에는 베이터우·우라이의 고급 프라이빗 가족탕(탕우)을 대기 없이 바로 이용할 수 있어 만족도가 배가 됩니다.",
+        badge: "COURSE 02 · WINTER SPA & WHISKY (이스틴 호텔 거점)",
+        title: "12월 맞춤형 온천 힐링 & 마오콩 곤돌라(직통) · 위스키",
+        desc: "이스틴 타이베이 호텔 앞 중샤오푸싱역의 최대 강점인 '갈색 원후선(마오콩 곤돌라 직통)'과 '파란색 반난선(시외버스터미널 직통)'을 200% 활용하는 12월 겨울 맞춤형 온천·위스키·다원 힐링 코스입니다.",
+        jarvisWhy: "다른 동네 호텔에 묵으면 마오콩 곤돌라 타러 갈 때 지하철을 두 번씩 갈아타야 하지만, 이스틴 호텔에서는 중샤오푸싱역 갈색 라인을 타면 환승 없이 22분 만에 곤돌라 탑승장에 도착합니다! 카발란 증류소 가는 버스터미널(시청역)도 파란색 라인으로 딱 3정거장입니다.",
         peopleReaction: {
-          pros: "도보 피로도가 거의 없고, 따뜻한 온천수 덕분에 부모님이나 배우자 동반 시 칭찬이 쏟아지는 웰니스 코스.",
-          cons: "지우펀이나 예류 같은 유명 관광지 인증샷을 포기해야 함 (단, 원하면 2일차 저녁에 지우펀만 살짝 추가 가능).",
+          pros: "중샤오푸싱역 교통 인프라 덕분에 온천·곤돌라·증류소 이동이 놀라울 만큼 편하고 체력 소모가 적음.",
+          cons: "지우펀이나 예류 같은 북부 해안 코스는 제외됨 (원할 경우 2일차 저녁에 호텔 앞 1062번 버스로 지우펀 야경만 추가 가능).",
           quotes: [
-            "12월에 대만 가서 베이터우 개인 온천탕 들어갔는데 진짜 극락이었습니다. 피부도 매끈해지고 피로가 싹 풀려요.",
-            "카발란 증류소에서 오크통 숙성고 향 맡고 시음한 뒤 면세로 솔리스트 한 병 사 온 게 이번 여행 최고의 수확이었어요!"
+            "중샤오푸싱역에서 갈색 지상철 타고 창밖 구경하다 보니 20분 만에 마오콩 곤돌라 역이더라고요. 이스틴 호텔 위치 진짜 최고!",
+            "시청역 버스터미널까지 지하철로 5분 거리라 아침에 이란 카발란 증류소 다녀오기가 너무 수월했습니다."
           ]
         },
         spots: [
           {
-            name: "베이터우 지열곡 & 프라이빗 온천",
+            name: "베이터우 지열곡 & 온천마을",
             tag: "Day 1 도심 유황온천",
-            img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
-            caption: "옥빛 유황 온천수가 피어오르는 지열곡 산책과 특급 호텔 개인탕 입욕",
+            wikiTitle: "Beitou Hot Spring",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+            caption: "에메랄드빛 유황 온천수와 수증기가 피어오르는 실제 베이터우 지열곡",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Beitou+Thermal+Valley"
           },
           {
-            name: "카발란 위스키 증류소 (이란)",
-            tag: "Day 2 애주가 성지",
-            img: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=800&q=80",
-            caption: "세계 위스키 품평회를 휩쓴 카발란 증류소 견학과 나만의 위스키 DIY 블렌딩",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Kavalan+Distillery"
+            name: "마오콩 곤돌라 & 산 중턱 다원",
+            tag: "Day 3 호텔서 직통 22분!",
+            wikiTitle: "Maokong Gondola",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+            caption: "중샤오푸싱역 갈색 라인으로 환승 없이 가서 즐기는 크리스탈 캐빈과 우롱차",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola"
           },
           {
-            name: "디화제(적화가) & 다다오청",
+            name: "디화제(적화가) 전통거리",
             tag: "Day 1 레트로 산책",
-            img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
-            caption: "19세기 붉은 벽돌 아케이드에 자리 잡은 한약방, 건어물 상점과 감성 찻집",
+            wikiTitle: "Dihua Street",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+            caption: "19세기 바로크 양식 붉은 벽돌 건물에 자리 잡은 한약방·건어물·찻집 거리",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Dihua+Street+Taipei"
           },
           {
-            name: "마오콩 곤돌라 & 산 중턱 다원",
-            tag: "Day 3 티타임",
-            img: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
-            caption: "바닥이 투명한 크리스탈 캐빈을 타고 올라가 차밭 뷰에서 마시는 철관음차",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola"
+            name: "카발란 위스키 증류소 (또는 우라이)",
+            tag: "Day 2 애주가 성지",
+            wikiTitle: "Kavalan Distillery",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?auto=format&fit=crop&w=800&q=80",
+            caption: "시청역 터미널에서 버스로 50분이면 닿는 세계적인 싱글몰트 증류소",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Kavalan+Distillery"
           }
         ],
         pins: [
-          { name: "디화제 전통거리 (샤하이청황묘)", cat: "올드타운", url: "https://www.google.com/maps/search/?api=1&query=Dihua+Street+Taipei" },
-          { name: "베이터우 온천박물관 & 지열곡", cat: "온천", url: "https://www.google.com/maps/search/?api=1&query=Beitou+Thermal+Valley" },
-          { name: "가이야 호텔 베이터우 (개인탕/눈꽃온천)", cat: "온천호텔", url: "https://www.google.com/maps/search/?api=1&query=The+Gaia+Hotel+Taipei" },
-          { name: "닝샤 야시장 (굴전/타로볼)", cat: "야시장", url: "https://www.google.com/maps/search/?api=1&query=Ningxia+Night+Market" },
-          { name: "우라이 온천마을 & 폭포 (옵션 A)", cat: "계곡온천", url: "https://www.google.com/maps/search/?api=1&query=Wulai+Waterfall" },
+          { name: "이스틴 타이베이 호텔 (베이스캠프)", cat: "숙소", url: "https://www.google.com/maps/search/?api=1&query=Eastin+Taipei+Hotel" },
+          { name: "디화제 전통거리", cat: "올드타운", url: "https://www.google.com/maps/search/?api=1&query=Dihua+Street+Taipei" },
+          { name: "베이터우 지열곡", cat: "온천", url: "https://www.google.com/maps/search/?api=1&query=Beitou+Thermal+Valley" },
+          { name: "더 가이야 호텔 베이터우 (개인탕)", cat: "온천호텔", url: "https://www.google.com/maps/search/?api=1&query=The+Gaia+Hotel+Taipei" },
+          { name: "닝샤 야시장", cat: "야시장", url: "https://www.google.com/maps/search/?api=1&query=Ningxia+Night+Market" },
+          { name: "우라이 온천마을 (옵션 A)", cat: "계곡온천", url: "https://www.google.com/maps/search/?api=1&query=Wulai+Waterfall" },
           { name: "카발란 위스키 증류소 (옵션 B)", cat: "위스키", url: "https://www.google.com/maps/search/?api=1&query=Kavalan+Distillery" },
-          { name: "자오시 온천공원 (옵션 B)", cat: "족욕", url: "https://www.google.com/maps/search/?api=1&query=Jiaoxi+Hot+Springs+Park" },
-          { name: "화산1914 문화창의산업원구", cat: "문화특구", url: "https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park" },
-          { name: "마오콩 곤돌라 (동물원역 탑승)", cat: "전망/차", url: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola" }
+          { name: "마오콩 곤돌라 (중샤오푸싱 직통)", cat: "전망/차", url: "https://www.google.com/maps/search/?api=1&query=Maokong+Gondola" },
+          { name: "키키레스토랑 옌지점 (호텔 도보 6분)", cat: "맛집", url: "https://www.google.com/maps/search/?api=1&query=Kiki+Restaurant+Yanji" }
         ],
         days: [
           {
             day: "Day 1",
             date: "12/01 (화)",
-            theme: "올드타운 레트로 산책 & 베이터우 프라이빗 유황온천",
-            route: "타오위안 공항 ➔ 중산역 숙소 ➔ 디화제 거리 ➔ 베이터우 온천마을(개인탕) ➔ 닝샤 야시장",
+            theme: "이스틴 호텔 짐 보관 ➔ 디화제 올드타운 ➔ 베이터우 유황온천 & 닝샤 야시장",
+            route: "타오위안 공항 ➔ 이스틴 호텔(14F) ➔ 디화제 거리 ➔ 베이터우 온천마을(지열곡·개인탕) ➔ 닝샤 야시장 ➔ 호텔",
             schedule: [
-              { time: "13:00", title: "중산역 호텔 짐 보관 및 우육면 점심 식사", detail: "쾌적한 중산역 거점 확보 후 진한 국물의 대만 정통 우육면으로 첫 끼 해결" },
-              { time: "14:30", title: "디화제(적화가) 전통거리 & 다다오청 감성 카페", detail: "100년 넘은 바로크 양식 건물 사이에서 대만 명차, 말린 망고 쇼핑 및 레트로 다방 티타임" },
-              { time: "17:00", title: "베이터우 온천마을 이동 & 프라이빗 가족탕(탕우) 힐링", detail: "지열곡 산책 후 '더 가이야 호텔' 또는 '스프링 시티 리조트' 개인 온천룸에서 90분간 프라이빗 입욕" },
-              { time: "20:00", title: "닝샤 야시장 로컬 미식 탐방", detail: "미슐랭 빕구르망에 오른 위안환비엔 굴전, 리우위자이 타로볼 등 알짜배기 야식 정복" }
+              { time: "11:25", title: "타오위안 공항 도착 ➔ 이스틴 호텔 짐 보관 및 우육면 점심", transit: "공항철도(타이베이역) + 파란선(중샤오푸싱역) 또는 1960번 공항버스 직행", detail: "14층 로비에 짐 맡긴 후 호텔 뒤편 도보 2분 거리 로컬 맛집 '정무우육면(政武牛肉麵)' 또는 '자림증교관'에서 점심" },
+              { time: "14:30", title: "디화제(적화가) 전통거리 & 다다오청 감성 찻집 산책", transit: "중샤오푸싱역(파란선) ➔ 베이먼역(초록선 1정거장) 하차 후 3번 출구 도보 7분", detail: "19세기 바로크 양식 건물 사이에서 대만 우롱차·건망고 구경 및 고풍스러운 찻집 티타임" },
+              { time: "17:00", title: "베이터우 온천마을 이동 & 프라이빗 가족탕(탕우) 힐링", transit: "쌍롄역에서 빨간색 단수이선 탑승 ➔ 베이터우역 ➔ 신베이터우역 하차 (약 25분)", detail: "지열곡 관람 후 '더 가이야 호텔' 또는 '스프링 시티 리조트' 개인 온천룸에서 90분간 따뜻한 유황온천 입욕" },
+              { time: "20:00", title: "닝샤 야시장 로컬 미식 ➔ 호텔 복귀", transit: "빨간색 라인으로 쌍롄역 하차(닝샤 야시장) ➔ 복귀 시 중산역/타이베이역 거쳐 중샤오푸싱역 이동", detail: "미슐랭 굴전, 타로볼 등 알짜배기 야식 맛보고 호텔로 복귀해 록시땅 어메니티로 꿀잠" }
             ]
           },
           {
             day: "Day 2",
             date: "12/02 (수)",
             theme: "[택 1] 우라이 계곡 탄산온천 OR 이란 카발란 위스키 증류소",
-            route: "옵션 A: 우라이 꼬마기차·폭포·계곡온천 / 옵션 B: 이란 카발란 증류소 시음 & 자오시 온천 족욕",
+            route: "옵션 A: 중샤오푸싱 ➔ 신뎬역(849버스) ➔ 우라이 / 옵션 B: 시청역 터미널 ➔ 이란 카발란 증류소 & 자오시 온천",
             schedule: [
-              { time: "10:30", title: "[옵션 A - 온천파] 우라이 온천마을 당일치기", detail: "우라이 옛거리에서 원주민 멧돼지 소시지 맛보고 꼬마기차(태거차) 탑승, 폭포 뷰 카페 & 미인탕(탄산온천) 입욕" },
-              { time: "10:30", title: "[옵션 B - 위스키파] 이란 카발란 위스키 증류소 & 자오시", detail: "타이베이 시외버스터미널에서 1시간 이동, 카발란 증류소 투어·시음·DIY 블렌딩 체험 후 자오시 온천 족욕" },
-              { time: "18:30", title: "시내 복귀 후 프리미엄 마라훠궈 & 타이완 18일 생맥주", detail: "신마라 또는 마라훠궈에서 소고기·해산물 무제한 코스와 유통기한 18일짜리 신선한 생맥주 만찬" }
+              { time: "10:00", title: "[옵션 A - 온천파] 우라이 온천마을 당일치기", transit: "중샤오푸싱역 ➔ 초록색 라인 환승 ➔ 종점 신뎬(Xindian)역 하차 후 849번 버스 탑승 (약 1시간)", detail: "우라이 옛거리 산책, 꼬마기차(태거차) 탑승, 폭포 뷰 카페 감상 및 무색무취 미인탕(탄산온천) 입욕" },
+              { time: "10:00", title: "[옵션 B - 위스키파] 이란 카발란 위스키 증류소 & 자오시", transit: "중샤오푸싱역에서 파란색 라인 3정거장 ➔ 시청역(시외버스터미널)에서 카발란/자오시행 고속버스 탑승 (50분)", detail: "카발란 증류소 투어·싱글몰트 시음·면세 구매 후 돌아오는 길에 자오시 온천공원 무료 족욕" },
+              { time: "18:30", title: "호텔 복귀 후 동취 '만당홍 마라훠궈' & 타이완 18일 생맥주", transit: "이스틴 호텔에서 도보 5분 거리 동취 상권", detail: "호텔 바로 근처 프리미엄 훠궈집에서 소고기·해산물 무제한 코스와 신선한 18일 생맥주 만찬" }
             ]
           },
           {
             day: "Day 3",
             date: "12/03 (목) ~ 12/04 (금) 새벽",
-            theme: "문화창의원구 · 마오콩 다원 · 고급 스파 후 출국",
-            route: "체크아웃 ➔ 화산1914 ➔ 마오콩 곤돌라(산 중턱 찻집) ➔ 신이구 백화점 ➔ 아로마 스파 ➔ 공항(23:50)",
+            theme: "화산1914 · 마오콩 곤돌라(갈색선 직통!) · 스파 후 출국",
+            route: "14F 체크아웃(짐보관) ➔ 화산1914 ➔ [갈색선 직통] 마오콩 곤돌라 ➔ SOGO 백화점 ➔ 스파 ➔ 공항",
             schedule: [
-              { time: "10:30", title: "화산1914 문화창의산업원구 산책 & 브런치", detail: "옛 양조장을 재생한 복합문화공간에서 원목 오르골 샵 구경 및 테라스 브런치" },
-              { time: "14:00", title: "마오콩 곤돌라 탑승 & 산 정상 찻집에서 우롱차 시음", detail: "크리스탈 캐빈을 타고 산 정상에 올라 타이베이 스카이라인을 내려다보며 전통 다도 체험" },
-              { time: "18:00", title: "신이구 백화점 투어 & 딘타이펑 A4점 저녁", detail: "타이베이 101 인근 백화점에서 써니힐 펑리수, 카발란 위스키 쇼핑 후 저녁 식사" },
-              { time: "21:00", title: "고급 아로마 오일 스파(샤워 완비) 후 공항 이동", detail: "개운하게 샤워 및 스파 마친 뒤 호텔에서 짐 찾아 공항으로 출발 (12/04 02:50 비행기 탑승)" }
+              { time: "10:30", title: "체크아웃(짐 보관) ➔ 화산1914 문화창의산업원구", transit: "중샤오푸싱역에서 파란색 라인 딱 1정거장 ➔ 중샤오신생역 1번 출구 (5분 컷!)", detail: "옛 양조장을 재생한 복합문화공간에서 원목 오르골 샵 구경 및 테라스 브런치" },
+              { time: "14:00", title: "[이스틴 호텔 특권] 갈색 라인 직통! 마오콩 곤돌라 & 산 정상 찻집", transit: "중샤오푸싱역에서 갈색 원후선 탑승 ➔ 종점 동물원역 하차 (환승 0회, 22분 소요!)", detail: "바닥이 투명한 크리스탈 캐빈 곤돌라를 타고 산 정상에 올라 타이베이 스카이라인을 내려다보며 전통 철관음차 시음" },
+              { time: "18:00", title: "갈색 라인으로 호텔 앞 복귀 ➔ SOGO 백화점 쇼핑 & 키키레스토랑", transit: "동물원역에서 갈색 라인 타고 중샤오푸싱역 직행 (22분)", detail: "호텔 앞 백화점 식품관에서 펑리수·누가크래커 쇼핑 후 도보 6분 거리 키키레스토랑 옌지점에서 저녁 식사" },
+              { time: "21:00", title: "호텔 옆 아로마 스파 마사지 ➔ 14층 짐 픽업 후 공항 이동", transit: "호텔 1층에서 우버 탑승 (공항까지 40분) 또는 파란선+공항철도 막차", detail: "개운하게 마사지 받고 호텔 라운지에서 짐 챙겨 공항으로 출발 (12/04 02:50 비행기 탑승)" }
             ]
           }
         ]
       },
       {
         id: 2,
-        badge: "COURSE 03 · TRENDY & LOCAL VIBES",
-        title: "힙스터 골목 산책 + 해안 라이딩 + 야간 지우펀 직행",
-        desc: "깃발 따라다니는 투어버스나 붐비는 박물관은 과감히 뺐습니다. 타이베이의 성수동이라 불리는 츠펑제, 발리 해안 전동자전거 라이딩, 그리고 노을 질 무렵 지우펀만 단독으로 다녀오는 가장 힙하고 여유로운 로컬 코스입니다.",
-        jarvisWhy: "틀에 박힌 관광보다 도시의 바이브, 골목의 디테일, 그리고 여유로운 템포를 선호하는 기획자의 시선에 맞췄습니다. 특히 예류·스펀을 생략하고 오후 늦게 965번 직행버스로 '지우펀'만 단독 방문해 찻집에서 2시간 동안 노을을 즐기는 동선이 백미입니다.",
+        badge: "COURSE 03 · TRENDY & LOCAL VIBES (이스틴 호텔 거점)",
+        title: "보피랴오 역사거리 + 해안 라이딩 + 1062번 야간 지우펀 직행",
+        desc: "이스틴 호텔 바로 앞 중샤오푸싱역에서 출발하는 '1062번 지우펀 직행버스'를 활용해 복잡한 투어 없이 지우펀 노을만 우아하게 즐기고, 보피랴오 붉은 벽돌 거리와 발리 해안 전동자전거, 동취 힙스터 골목을 누비는 감성 로컬 코스입니다.",
+        jarvisWhy: "지우펀 가는 1062번 광역버스의 시발점이 바로 이스틴 호텔 코앞인 중샤오푸싱역입니다! 다른 여행자들이 중간 정류장에서 만원 버스를 못 타 발을 동동 구를 때, Boss는 시발점에서 제일 먼저 앉아서 지우펀까지 한 번에 갈 수 있습니다.",
         peopleReaction: {
-          pros: "투어 시간에 쫓기지 않고 현지 젊은 층이 노는 힙한 공간들을 여유롭게 즐길 수 있음. 사진이 가장 감각적으로 나오는 코스.",
+          pros: "투어버스 시간에 쫓기지 않고 호텔 앞 1062번 버스로 지우펀만 여유롭게 다녀올 수 있어 동선 만족도가 최고조.",
           cons: "고궁박물관이나 예류 지질공원 같은 전통적인 역사·자연 학습 코스는 제외됨.",
           quotes: [
-            "예스진지 투어 안 하고 오후에 지우펀만 버스로 직행했더니 체력도 안 털리고 찻집 명당자리에서 노을 실컷 봤어요!",
-            "단수이에서 배 타고 발리로 건너가서 전동자전거 탄 게 대만 여행 통틀어 제일 신나고 행복했던 기억입니다."
+            "이스틴 호텔 바로 앞 중샤오푸싱역에서 1062번 버스 탔더니 시발점이라 명당자리 앉아서 지우펀까지 1시간 만에 푹 자면서 갔어요!",
+            "보피랴오 역사거리 붉은 벽돌 코너 건물 앞에서 아침에 사진 찍었는데 사람도 없고 화보처럼 나왔습니다."
           ]
         },
         spots: [
           {
+            name: "보피랴오 역사거리 (구글맵 대표 뷰)",
+            tag: "Day 3 파란선 직통 12분!",
+            wikiTitle: "Bopiliao Historic Block",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80",
+            caption: "중샤오푸싱역에서 파란색 라인으로 12분이면 도착하는 붉은 벽돌 아케이드 명소",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Bopiliao+Historical+Block"
+          },
+          {
+            name: "단수이 & 발리 페리 라이딩",
+            tag: "Day 2 해안 액티비티",
+            wikiTitle: "Tamsui Fisherman's Wharf",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80",
+            caption: "단수이 선착장에서 페리를 타고 발리 해안도로를 달리는 전동자전거 투어",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Tamsui+Ferry+Pier"
+          },
+          {
+            name: "화산1914 문화창의산업원구",
+            tag: "Day 1 호텔서 1정거장!",
+            wikiTitle: "Huashan 1914 Creative Park",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
+            caption: "호텔에서 지하철 1정거장(도보 15분) 거리에 있는 타이베이 최고의 복합문화공간",
+            mapUrl: "https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park"
+          },
+          {
             name: "샹산 전망대 노을 & 야경",
             tag: "Day 1 인생샷 스팟",
-            img: "https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=800&q=80",
+            wikiTitle: "Xiangshan (Taipei)",
+            wikiLang: "en",
+            fallbackImg: "https://images.unsplash.com/photo-1508248467877-aec1b08de376?auto=format&fit=crop&w=800&q=80",
             caption: "20분만 계단을 오르면 타이베이 101이 손에 잡힐 듯 펼쳐지는 최고의 뷰포인트",
             mapUrl: "https://www.google.com/maps/search/?api=1&query=Xiangshan+Viewing+Platform"
-          },
-          {
-            name: "단수이 & 발리 해안 라이딩",
-            tag: "Day 2 액티비티",
-            img: "https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80",
-            caption: "페리를 타고 강 건너 발리로 넘어가 야자수 해안도로를 달리는 전동자전거 투어",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Bali+Left+Bank+Park"
-          },
-          {
-            name: "츠펑제(적봉가) 빈티지 골목",
-            tag: "Day 1 힙스터 성지",
-            img: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80",
-            caption: "오래된 철공소 골목 사이로 들어선 감각적인 로스터리 카페와 디자인 편집샵",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Chifeng+Street+Taipei"
-          },
-          {
-            name: "보피랴오 역사거리",
-            tag: "Day 3 로컬 감성",
-            img: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=800&q=80",
-            caption: "청나라 시대부터 이어진 붉은 벽돌 아케이드 골목에서의 한적한 오전 산책",
-            mapUrl: "https://www.google.com/maps/search/?api=1&query=Bopiliao+Historical+Block"
           }
         ],
         pins: [
+          { name: "이스틴 타이베이 호텔 (베이스캠프)", cat: "숙소", url: "https://www.google.com/maps/search/?api=1&query=Eastin+Taipei+Hotel" },
+          { name: "1062번 지우펀 직행버스 정류장 (중샤오푸싱 2번출구)", cat: "버스정류장", url: "https://www.google.com/maps/search/?api=1&query=MRT+Zhongxiao+Fuxing+Station+Exit+2" },
+          { name: "보피랴오 역사거리 (구글맵 대표핀)", cat: "역사거리", url: "https://www.google.com/maps/search/?api=1&query=Bopiliao+Historical+Block" },
+          { name: "화산1914 문화창의산업원구", cat: "복합문화", url: "https://www.google.com/maps/search/?api=1&query=Huashan+1914+Creative+Park" },
           { name: "츠펑제 (적봉가 카페·편집샵 골목)", cat: "힙플레이스", url: "https://www.google.com/maps/search/?api=1&query=Chifeng+Street+Taipei" },
           { name: "샹산 자연보도 입구 (전망대)", cat: "야경", url: "https://www.google.com/maps/search/?api=1&query=Xiangshan+Trail" },
-          { name: "다다오청 부두 컨테이너 마켓 (PIER 5)", cat: "강변야경", url: "https://www.google.com/maps/search/?api=1&query=Dadaocheng+Wharf+Container+Market" },
           { name: "단수이 페리 선착장 (발리행)", cat: "액티비티", url: "https://www.google.com/maps/search/?api=1&query=Tamsui+Ferry+Pier" },
-          { name: "발리 좌안공원 (전동자전거 대여)", cat: "라이딩", url: "https://www.google.com/maps/search/?api=1&query=Bali+Left+Bank+Park" },
-          { name: "지우펀 해열루 / 아메이차주관", cat: "야경찻집", url: "https://www.google.com/maps/search/?api=1&query=Jiufen+Old+Street" },
           { name: "푸항또우장 (미슐랭 로컬 조식)", cat: "맛집", url: "https://www.google.com/maps/search/?api=1&query=Fuhang+Soy+Milk" },
-          { name: "보피랴오 역사거리", cat: "포토존", url: "https://www.google.com/maps/search/?api=1&query=Bopiliao+Historical+Block" },
           { name: "까르푸 꾸이린점 (24시간 쇼핑)", cat: "쇼핑", url: "https://www.google.com/maps/search/?api=1&query=Carrefour+Guilin+Store" }
         ],
         days: [
           {
             day: "Day 1",
             date: "12/01 (화)",
-            theme: "타이베이의 성수동(츠펑제) & 샹산 스카이라인",
-            route: "타오위안 공항 ➔ 북문/중산 숙소 ➔ 츠펑제 카페투어 ➔ 샹산 전망대(노을) ➔ 다다오청 부두 컨테이너 마켓",
+            theme: "이스틴 호텔 체크인 ➔ 동취 편집샵 · 화산1914 · 샹산 노을 야경",
+            route: "타오위안 공항 ➔ 이스틴 호텔(14F) ➔ 동취 골목 & 화산1914 ➔ 샹산 전망대(노을) ➔ 다다오청 부두 컨테이너 마켓",
             schedule: [
-              { time: "13:30", title: "중산역 츠펑제(적봉가) 빈티지 골목 & 카페 투어", detail: "대만 MZ세대가 모이는 소품샵, 독립서점, 핸드드립 로스터리 카페 여유롭게 산책" },
-              { time: "16:30", title: "샹산(코끼리산) 전망대 일몰 및 매직아워 감상", detail: "해 질 녘 20분 정도 계단을 올라 보랏빛으로 물드는 타이베이 101 파노라마 감상" },
-              { time: "19:00", title: "다다오청 부두 컨테이너 마켓 (PIER 5) 야경", detail: "단수이강변 바람을 맞으며 루프탑 컨테이너 바에서 수제맥주와 피자·꼬치구이 즐기기" }
+              { time: "11:25", title: "타오위안 공항 도착 ➔ 이스틴 호텔 짐 보관 & 동취 골목 브런치", transit: "공항철도+파란선(중샤오푸싱역 동취 지하상가 14번 출구) 또는 1960번 버스", detail: "14층에 캐리어 맡긴 후, 타이베이에서 가장 힙한 호텔 뒤편 동취(東區) 편집샵·카페 골목 산책 및 식사" },
+              { time: "14:30", title: "화산1914 문화창의산업원구 전시 & 소품샵", transit: "중샤오푸싱역에서 파란색 라인 딱 1정거장 ➔ 중샤오신생역 1번 출구 (3분 소요)", detail: "담쟁이덩굴로 덮인 붉은 벽돌 양조장 건물 앞에서 인생샷 찍고 오르골 샵 구경" },
+              { time: "16:30", title: "샹산(코끼리산) 전망대 일몰 및 매직아워 감상", transit: "중샤오신생역 ➔ 다안역(갈색선 1정거장) ➔ 샹산역(빨간선 3정거장) 2번 출구 (약 18분)", detail: "해 질 녘 20분 정도 계단을 올라 보랏빛으로 물드는 타이베이 101 파노라마 감상" },
+              { time: "19:30", title: "다다오청 부두 컨테이너 마켓 (PIER 5) 강변 맥주", transit: "우버 또는 MRT로 다다오청 부두 이동 ➔ 귀가 시 파란색 라인으로 호텔 복귀", detail: "단수이강변 야경을 바라보며 루프탑 컨테이너 바에서 수제맥주와 꼬치구이 즐기기" }
             ]
           },
           {
             day: "Day 2",
             date: "12/02 (수)",
-            theme: "단수이·발리 전동자전거 라이딩 & 지우펀 야간 직행",
-            route: "단수이역 ➔ 페리 탑승 ➔ 발리(전동자전거) ➔ 오후 965번 버스로 지우펀 직행 ➔ 시먼딩 심야 러차오",
+            theme: "단수이·발리 전동자전거 라이딩 & 호텔 앞 1062번 버스로 지우펀 직행!",
+            route: "단수이역 ➔ 페리 ➔ 발리(전동자전거) ➔ 중샤오푸싱역 복귀 ➔ [1062번 버스 시발점] 지우펀 직행 ➔ 동취 이자카야",
             schedule: [
-              { time: "10:30", title: "단수이 도착 후 페리 타고 강 건너 '발리(Bali)' 이동", detail: "배로 10분 건너가 대왕 오징어튀김 맛보고 2인용 전동자전거 빌려 야자수 해안도로 라이딩" },
-              { time: "15:30", title: "시내 복귀 후 965번 직행버스로 '지우펀' 단독 이동", detail: "복잡한 투어 대신 지우펀에만 집중! 전망 좋은 찻집 테라스석을 선점해 노을과 홍등 감상" },
-              { time: "19:30", title: "시먼딩 복귀 및 대만식 심야 포차(러차오 100)", detail: "대만 현지 바이브가 넘치는 러차오 식당에서 파인애플 새우튀김, 공심채볶음, 삼배계와 맥주 한잔" }
+              { time: "10:00", title: "단수이 도착 후 페리 타고 강 건너 '발리(Bali)' 해안 라이딩", transit: "중샤오푸싱역(파란선) ➔ 타이베이역(빨간선 환승) ➔ 단수이역 (약 45분)", detail: "배로 10분 건너가 대왕 오징어튀김 맛보고 2인용 전동자전거 빌려 야자수 해안도로 시원하게 라이딩" },
+              { time: "15:15", title: "[이스틴 호텔 특권] 호텔 앞 중샤오푸싱역에서 1062번 버스로 지우펀 직행!", transit: "중샤오푸싱역 2번 출구 앞 정류장에서 '1062번 광역버스' 시발점 탑승 ➔ 지우펀 옛거리 직행 (약 1시간, 요금 102 TWD)", detail: "시발점이라 무조건 푹신한 좌석에 앉아서 출발! 예류·스펀 생략하고 지우펀 찻집 테라스에서 여유롭게 노을과 홍등 감상" },
+              { time: "19:30", title: "1062번 버스 타고 호텔 코앞으로 복귀 ➔ 동취 심야 러차오/이자카야", transit: "지우펀에서 1062번 버스 탑승 ➔ 종점 중샤오푸싱역(호텔 앞) 하차!", detail: "내리자마자 바로 호텔 앞! 동취 골목의 현지 바이브 넘치는 러차오(대만식 포차)에서 파인애플 새우튀김과 생맥주" }
             ]
           },
           {
             day: "Day 3",
             date: "12/03 (목) ~ 12/04 (금) 새벽",
-            theme: "미슐랭 로컬 조식 · 까르푸 털기 · 마사지 후 출국",
-            route: "푸항또우장(조식) ➔ 보피랴오 역사거리 ➔ 융캉제 소품샵 ➔ 까르푸 꾸이린점 ➔ 마사지 ➔ 공항(23:50)",
+            theme: "푸항또우장 · 보피랴오 역사거리(직통 12분) · 까르푸 털기 후 출국",
+            route: "푸항또우장(조식) ➔ 14F 체크아웃(짐보관) ➔ [파란선 직통] 보피랴오 역사거리 ➔ 융캉제 ➔ 까르푸 ➔ 스파 ➔ 공항",
             schedule: [
-              { time: "09:30", title: "미슐랭 빕구르망 로컬 조식 (푸항또우장)", detail: "고소한 콩국(셴또우장)과 갓 구운 화덕빵(샤오빙), 꽈배기(요우티아오)로 현지의 아침 경험" },
-              { time: "11:30", title: "체크아웃 후 보피랴오 역사거리 & 용산사 산책", detail: "붉은 벽돌이 매력적인 레트로 거리에서 인생샷 찍고 용산사에서 점괘(점집) 체험" },
-              { time: "14:30", title: "융캉제 미식 & 라이하오(감성 소품샵) 구경", detail: "총좌빙(파전병), 우육면 맛보고 대만 로컬 디자이너 굿즈 쇼핑" },
-              { time: "17:30", title: "까르푸(꾸이린점) 위스키·누가크래커·기념품 털기", detail: "면세점보다 저렴한 대만 로컬 간식과 카발란/금문고량주 장보기" },
-              { time: "20:30", title: "전신 마사지(샤워 완비) 후 공항 이동", detail: "마사지샵에서 개운하게 씻고 피로 푼 뒤 호텔에서 짐 찾아 공항 이동 (12/04 02:50 출국)" }
+              { time: "09:00", title: "미슐랭 빕구르망 로컬 조식 (푸항또우장)", transit: "중샤오푸싱역에서 파란색 라인 딱 2정거장 ➔ 산다오스역 5번 출구 화산시장 2층 (4분 컷!)", detail: "고소한 콩국(셴또우장)과 갓 구운 화덕빵(샤오빙), 꽈배기(요우티아오)로 현지의 아침 경험 후 호텔로 돌아와 체크아웃(짐 보관)" },
+              { time: "11:30", title: "[파란선 직통] 보피랴오 역사거리 & 용산사 산책", transit: "중샤오푸싱역에서 파란색 반난선 탑승 ➔ 용산사역 3번 출구 하차 (환승 없이 12분!)", detail: "붉은 벽돌 코너 건물과 아케이드 골목에서 인생샷 찍고 바로 옆 용산사 관람" },
+              { time: "14:00", title: "까르푸(꾸이린점) 쇼핑 ➔ 호텔 14층 라운지에 쇼핑백 맡기기", transit: "보피랴오 거리에서 까르푸까지 도보 8분 ➔ 쇼핑 후 시먼역(파란선)에서 중샤오푸싱역(호텔) 직행", detail: "무거운 위스키·누가크래커·기념품을 사서 파란색 지하철로 9분 만에 호텔에 가져다 놓고 가볍게 다시 외출!" },
+              { time: "16:30", title: "융캉제 소품샵 산책 & 호텔 근처 키키레스토랑 저녁 만찬", transit: "동먼역(융캉제) 구경 후 호텔 근처로 복귀", detail: "라이하오 소품샵과 망고빙수 즐긴 뒤 호텔 인근에서 마지막 저녁 만찬" },
+              { time: "21:00", title: "호텔 도보 3분 '삼(森) SPA' 마사지 ➔ 14층 짐 픽업 후 공항 이동", transit: "호텔 1층에서 우버 탑승 (공항까지 40분) 또는 파란선+공항철도 막차", detail: "마사지샵에서 피로 푼 뒤 호텔 14층에서 캐리어와 까르푸 쇼핑백 챙겨 공항 이동 (12/04 02:50 출국)" }
             ]
           }
         ]
       }
     ];
+
+    // Live Wikipedia Official Image Resolver
+    const wikiImageCache = {};
+
+    async function hydrateWikiImages() {
+      const imgs = document.querySelectorAll('img[data-wiki-title]');
+      imgs.forEach(async (img) => {
+        const title = img.getAttribute('data-wiki-title');
+        const lang = img.getAttribute('data-wiki-lang') || 'en';
+        const cacheKey = `${lang}:${title}`;
+
+        if (wikiImageCache[cacheKey]) {
+          img.src = wikiImageCache[cacheKey];
+          return;
+        }
+
+        try {
+          const endpoint = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=pageimages&format=json&pithumbsize=900&redirects=1&origin=*`;
+          const res = await fetch(endpoint);
+          const data = await res.json();
+          const pages = data.query.pages;
+          const pageId = Object.keys(pages)[0];
+          if (pageId !== "-1" && pages[pageId].thumbnail && pages[pageId].thumbnail.source) {
+            const realUrl = pages[pageId].thumbnail.source;
+            wikiImageCache[cacheKey] = realUrl;
+            img.src = realUrl;
+          }
+        } catch (err) {
+          // Keeps fallback image
+        }
+      });
+    }
 
     function switchCourse(index) {
       document.querySelectorAll('.tab-btn').forEach((btn, i) => {
@@ -594,7 +681,7 @@
             <!-- Jarvis Pitch -->
             <div class="bg-orange-500/10 border border-orange-500/30 rounded-xl p-4">
               <div class="flex items-center gap-2 text-orange-400 font-bold text-xs uppercase tracking-wider mb-2">
-                <i class="fa-solid fa-robot"></i> 자비스의 선정 이유 (기획 포인트)
+                <i class="fa-solid fa-robot"></i> 자비스의 동선 설계 이유 (이스틴 호텔 시너지)
               </div>
               <p class="text-xs text-slate-200 leading-relaxed">${c.jarvisWhy}</p>
             </div>
@@ -602,7 +689,7 @@
             <!-- Real Traveler Reviews -->
             <div class="bg-slate-900/70 border border-slate-800 rounded-xl p-4 space-y-2">
               <div class="flex items-center justify-between text-xs font-bold text-emerald-400 mb-1">
-                <span><i class="fa-solid fa-comments mr-1"></i> 여행자들의 실제 반응 & 리뷰 요약</span>
+                <span><i class="fa-solid fa-comments mr-1"></i> 이스틴 투숙객 & 여행자 실제 반응 요약</span>
                 <span class="text-amber-400">★★★★★</span>
               </div>
               <p class="text-xs text-slate-300"><strong class="text-emerald-400">👍 장점:</strong> ${c.peopleReaction.pros}</p>
@@ -619,13 +706,18 @@
         <!-- Visual Photo Gallery -->
         <div>
           <h3 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-            <i class="fa-solid fa-images text-orange-400"></i> 코스 핵심 스팟 미리보기 (클릭 시 구글맵 연동)
+            <i class="fa-solid fa-images text-orange-400"></i> 코스 핵심 스팟 실제 사진 (클릭 시 구글맵 연동)
           </h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             ${c.spots.map(spot => `
               <a href="${spot.mapUrl}" target="_blank" class="glass-card rounded-xl overflow-hidden group img-zoom flex flex-col hover:border-orange-500/50 transition-all">
-                <div class="relative h-44 overflow-hidden">
-                  <img src="${spot.img}" alt="${spot.name}" class="w-full h-full object-cover transition-transform duration-500">
+                <div class="relative h-44 overflow-hidden bg-slate-900">
+                  <img data-wiki-title="${spot.wikiTitle}" 
+                       data-wiki-lang="${spot.wikiLang}" 
+                       src="${spot.fallbackImg}" 
+                       onerror="this.src='${spot.fallbackImg}'"
+                       alt="${spot.name}" 
+                       class="w-full h-full object-cover transition-transform duration-500">
                   <span class="absolute top-2.5 left-2.5 bg-slate-950/80 backdrop-blur-md text-orange-400 text-[11px] font-bold px-2.5 py-1 rounded-md border border-white/10">
                     ${spot.tag}
                   </span>
@@ -663,10 +755,10 @@
           </div>
         </div>
 
-        <!-- Day-by-Day Timeline -->
+        <!-- Day-by-Day Timeline with Transit Instructions -->
         <div class="space-y-6">
           <h3 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-route text-orange-400"></i> 일자별 상세 타임라인 (12/01 화 ~ 12/04 금)
+            <i class="fa-solid fa-route text-orange-400"></i> 일자별 상세 타임라인 & 구간별 교통편 이용법 (12/01 화 ~ 12/04 금)
           </h3>
           ${c.days.map(d => `
             <div class="glass-card rounded-2xl p-6">
@@ -687,7 +779,7 @@
               </div>
 
               <!-- Step Items -->
-              <div class="relative timeline-line space-y-5 pl-2">
+              <div class="relative timeline-line space-y-6 pl-2">
                 ${d.schedule.map(item => `
                   <div class="relative pl-8">
                     <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-orange-500 ring-4 ring-slate-900"></div>
@@ -695,7 +787,11 @@
                       <span class="text-xs font-mono font-bold text-orange-400 shrink-0">${item.time}</span>
                       <h5 class="text-sm font-bold text-white">${item.title}</h5>
                     </div>
-                    <p class="text-xs text-slate-400 mt-1 leading-relaxed">${item.detail}</p>
+                    <div class="mt-1.5 inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900 border border-slate-700/80 text-[11px] text-sky-300 font-medium">
+                      <i class="fa-solid fa-train-subway text-sky-400"></i>
+                      <span>${item.transit}</span>
+                    </div>
+                    <p class="text-xs text-slate-300 mt-1.5 leading-relaxed">${item.detail}</p>
                   </div>
                 `).join('')}
               </div>
@@ -703,6 +799,8 @@
           `).join('')}
         </div>
       `;
+
+      hydrateWikiImages();
     }
 
     // Initialize with Course 0
